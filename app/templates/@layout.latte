@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='cs'>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="{block keywords|strip|striptags}Dům, Rukou, Světla, terapie{/block}" />
+		<meta name="description" content="{block description|strip|striptags}Terapeutický Dům Rukou Světla je klidné místo uprostřed vzrostlé zahrady pro ladění naší duše i těla a nalézání harmonie v sobě i ve vztahu k okolí a všemu stvoření.{/block}" />
+		{block robots|indent:2}
+		{/block}
+		<script type="application/javascript" src="jquery.min.js"></script>
+		{block optional|indent:2}
+		{/block}
+		<link rel="stylesheet" href="dumsvetla.min.css" type="text/css" />
+		<title>{block title|strip|striptags}Dům Rukou Světla{/block}</title>
+	</head>
+	<body>
+		<div id="vrtbdy">
+			<div id="topbdy">
+				<div id="lftbdy">
+					<div id="rgtbdy">
+						<div id="btmbdy">
+							<div id="hands">
+								<h1 id="head">Dům Rukou Světla</h1>
+								<ul id="menu">
+									<li><a n:href="Web:domu"{ifCurrent Web:domu} class="active"{/ifCurrent}>Domů</a></li>
+									<li><a n:href="Web:terapeuti"{ifCurrent Web:terapeuti} class="active"{/ifCurrent} >Terapeuti</a></li>
+									<li><a n:href="Web:aktuality"{ifCurrent Web:aktuality} class="active"{/ifCurrent} >Aktuality</a></li>
+									<li><a n:href="Web:cesta"{ifCurrent Web:cesta} class="active"{/ifCurrent} >Cesta</a></li>
+									<li><a n:href="Web:kontakt"{ifCurrent Web:kontakt} class="active"{/ifCurrent}>Kontakt</a></li>
+								</ul>
+								<div id="content">
+									<!--[if lt IE 9]>
+									<div class="flash error">
+										Používáte zastaralou verzi prohlížeče, některé stránky na tomto webu se vám mohou zobrazit nekorektně.
+										Pro správné zobrazení stránek si aktualizujte prohlízeč.
+									</div>
+									<![endif]-->
+									{include #content|indent:9}
+								</div>
+								<div class="clr"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--[if IE]><![if gt IE 8]><![endif]-->
+		<script type="application/javascript" src="light.min.js"></script>
+		<!--[if IE]><![endif]><![endif]-->
+	</body>
+</html>

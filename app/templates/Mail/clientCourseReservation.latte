@@ -1,0 +1,19 @@
+{layout 'courseReservation.latte'}
+{define #title}Rezervace - {$courseData['course']}{/define}
+{block #body}
+<p style="margin-bottom:12px">
+	Dobrý den,<br>
+	děkujeme za Vaši objednávku. Zkontrolujte si prosím údaje Vaší rezervace.
+	V případě nesrovnalostí odpovězte na tento email a chybné údaje opravte.
+</p>
+{include #data}
+<p style="margin:12px 0 2px 0;clear:both">
+	S pozdravem
+</p>
+<p style="margin-top:2px;margin-left:25px">
+	Ing. Martina Fantová<br>
+	<a style="color:#72340b;font-weight:bold" href="http://www.dumrukousvetla.cz">Dům Rukou Světla</a><br>
+	Tel: +420 601 350 474
+</p>
+{/block}
+

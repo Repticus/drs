@@ -1,0 +1,257 @@
+{block title}Naši terapeuti{/block}
+
+{block optional}
+<link type="text/css" href="gallery.min.css" rel="stylesheet" />
+{/block}
+
+{block content}
+<div id="therapist">
+	{foreach $therapist as $id => $data}
+		<div>
+			<ul>
+				<li n:class="personal, $iterator->first ? active" desc="person{$id}">
+					<div class="person" title="Jméno terapeuta"><strong>{$data['name']}</strong></div>
+					<div class="phone" title="Telefon">{$data['phone']}</div>
+				</li>
+				<li n:ifset="$data['mail']">
+					<a class="mail" title="Email" href="mailto:{$data['mail']}">{$data['mail']}</a>
+				</li>
+				<li n:ifset="$data['web']">
+					<a class="website" title="Web" target="_blank" href="http://{$data['web']}">{$data['web']}</a>
+				</li>
+			</ul>
+		</div>
+	{/foreach}
+</div>
+<div id="info">
+	{foreach $therapist as $id => $data}
+		<div n:class="description, $iterator->first ? visible" id="person{$id}">
+			<h2>{$data['name']}</h2>
+			{include #$id}
+		</div>
+	{/foreach}
+</div>
+<script type="text/javascript">
+	$(function () {
+		$("#therapist li.personal").click(function () {
+			if (!$("#info:animated").length) {
+				visiblePerson = $("#info div:visible");
+				activePerson = $("#" + $(this).attr("desc"));
+				$("#therapist li.personal.active").removeClass("active");
+				$(this).closest("li").addClass("active");
+				$("#info").animate({
+					height: 0
+				}, 800, function () {
+					visiblePerson.css("display", "none");
+					activePerson.css("display", "block");
+					height = activePerson.height();
+					$("#info").animate({
+						height: height
+					}, 800);
+				});
+			}
+		});
+	});
+</script>
+{/block}
+
+{define ctvrtek}
+<p>
+	Bioterapeut - více než 30 let se zabývám příčinnou terapii vedoucí k nalezení rovnováhy duše i těla, poradenstvím osobního rozvoje a růstu.
+	Ve svém působení využívám spirituálních technik, práci s energiemi, reflexní terapii, konzultací, individuální a rodinnou terapii a mnoha dalších metod.
+	Tyto techniky jsou zaměřené na celostní pojetí, především na příčiny obtíží,
+	které mohou souviset s disharmonií v pracovním, osobním, rodinném, ale i společenském životě.
+	Jsou mnohdy zdrojem různých obtíží fyzického těla, které se projevují i na psychice.
+	Snažím se o harmonizaci energetických center.
+	Tyto techniky mohu provádět i na dálku.
+</p>
+{/define}
+
+{define fantova}
+<p>
+	Mým velkým přáním je připravit pro Vás vlídné prostředí a atmosféru v Domě Rukou Světla tak,
+	abyste se u nás cítili jako doma.
+</p>
+<p>
+	Věnuji se zejména organizaci akcí a programu v našem Domě.
+	Najdete u mne odpovědi na vše, co Vás zajímá ohledně možností, které nabízíme.
+</p>
+<p>
+	Příležitostně mohu nabídnout harmonizační a relaxační metodu AromaTouch.
+	Jedná se o jemnou techniku, při které se přímo na záda, dlaně a chodidla aplikují vybrané esenciální oleje terapeutické kvality.
+	A jelikož je fyzický stav člověka úzce propojen s emocemi a duševním klidem,
+	aplikace olejů nám napomáhá v mnoha směrech – komunikují s naším tělem na buněčné úrovni,
+	působí protizánětlivě, ulevují při bolestech svalů a kloubů, jsou antibakteriální,
+	antivirově a protiplísňově, podporují detoxikaci a hubnutí, zvyšují imunitu.
+</p>
+{/define}
+
+{define zelenayova}
+<p>
+	Bachovy květové esence se skládají z 38 esencí k harmonizaci těla i duše.
+	Esence představují jednoduchý a zároveň velice účinný systém zvládání negativních emocí.
+	Jsou užitečné při překonávání krizových okamžiků života, náročných jak psychicky, tak fyzicky.
+	Pomáhají k navrácení harmonie mysli, duše i těla a tím i nastartování přirozené obranyschopnosti organismu,
+	jsou pomocníkem na cestě osobního a duchovního rozvoje.
+</p>
+<p>
+	Jedná se o čistě přírodní esence, které velmi dobře podporují účinky všech ostatních terapií, nemají žádné  vedlejší účinky a nevyvolávají závislost. Jsou vhodné pro dospělé, děti, těhotné a kojící ženy i pro domácí zvířata. Zvláště účinná jsou u různých druhů strachů, smutků, při nízkém sebevědomí, pocitech viny, nespokojenosti, podrážděnosti, pocitech rezignace, beznaděje, žárlivosti, výbušnosti, nerozhodnosti, při fyzickém a psychickém vyčerpání, nespavosti, stresu, poruchách koncentrace apod. Výběr esencí je individuální dle osobní konzultace s klientem. Součástí konzultace je namíchání vybraných esencí do 30 ml lahvičky s kapátkem. Jedna lahvička je na cca měsíční užívání.
+</p>
+{/define}
+
+{define ocelikova}
+<p>
+	Zajímá mě lidský rozměr člověka, jeho srdce a zejména jeho duše.
+	Pomáhám k celkové harmonizaci, a to většinou kombinací několika metod.
+	Nabízím také masáže, dále pořádám a osobně vedu různé kurzy a semináře.
+</p>
+<p>
+	Vedle činnosti v Domě Rukou Světla mám mnohaletou zkušenost v psychoterapeutickém institutu a také v institutu čínské a celostní medicíny.
+	Moje praxe v následujících oborech je více než 20-ti letá.
+</p>
+<p>
+	Můžete se ke mně objednat na osobní sezení nebo na kurz,
+	seminář či si vyjednat přednášku v Domě Rukou Světla i jinde a také skupinovou terapii v oblasti astro-konstelací či v jiné oblasti,
+	kterou se zabývám.
+</p>
+<b>Nabízím:</b>
+<ul class="skills">
+	<li>
+		Kraniosakrální terapie – přijímám klienty a také pořádám <a target="_blank" href="http://www.kranio-sakralni-terapie.cz/kurzy-kraniosakralni-terapie">kurzy kraniosakrální terapie</a>.
+		O metodě, kurzech i o mně si můžete více přečíst na mých stránkách o <a target="_blank" href="http://www.kranio-sakralni-terapie.cz/kraniosakralni-terapie">Kraniosakrální terapii a energiích</a>.
+	</li>
+	<li>Práce s energií na duševní i fyzické úrovni – více na <a target="_blank" href="http://www.kranio-sakralni-terapie.cz">www.kranio-sakralni-terapie.cz</a></li>
+	<li>Otevření skrytého potenciálu a objevení poslání duše – více na <a target="_blank" href="http://www.amarhea.cz">www.amarhea.cz</a></li>
+	<li>Manuální lymfodrenáž</li>
+	<li><a target="_blank" href="http://www.amarhea.cz/hvezdy-vypravi">Astrokonstelace a astropsychologie</a> pro jednotlivce i pro skupiny </li>
+	<li><a target="_blank" href="http://www.amarhea.cz/kurzy-astro-konstelace">Kurzy Astro-konstelací a astroporadenství</a></li>
+	<li><a target="_blank" href="http://www.amarhea.cz/tanecni-kurzy">Kurzy tance a her</a> – studovala jsem tanec a herectví a mnoho roků pořádala kurzy tance a galavečery jako choreografka a režisérka.</li>
+</ul>
+{/define}
+
+{define klozova}
+<p>
+	Při své práci používám zejména biodynamické masáže, reflexní terapie chodidel či masáž vycházející z Breussovy masáže (jemná, relaxační, zaměřená na protažení páteře a výživu meziobratlových plotének). Vycházím z více než 10tileté zkušenosti ve fyzioterapii. Vystudovala jsem bakalářské studium fyzioterapie na 3. Lékařské fakultě UK v letech 2000-2003.  Po ukončení studia jsem absolvovala několik kurzů zaměřených na terapii pohybového systému: měkké techniky a mobilizace – přístupy manuální medicíny, spirální dynamika, Vojtova metoda atd. Tyto kurzy a semináře byly pro mě přínosné, ale chyběla mi zde integrace s duší člověka a pochopení lidské bytosti jako celku. Začala jsem se zajímat o psychosomatiku a o celostní léčebné postupy.
+	Velmi mě zaujala Bodypsychoterapie (psychoterapie zaměřená na tělo), která pracuje s konceptem „tkáňové paměti“ těla, kdy si vlastně naše tělo ukládá všechny prožitky v pomyslné knihovně podvědomí. Jemný dotek, používaný v biodynamických masážích, může vynést tyto prožitky z podvědomí do vědomí člověka, a tak umožnit jejich zpracování. Velmi ráda používám reflexní terapii a masáž vycházející z Breussovy masáže.
+	Jedním z mých cílů je propojovat přístupy „klasické“ fyzioterapie s celostními postupy a hledat cesty k spokojenému a naplněnému životu mých klientů.
+</p>
+{/define}
+
+{define pyrasova}
+<p>
+	Jsem terapeutka metody RUŠ (rychlá a účinná změna skutečnosti),
+	kterou se zabývám od roku 2012 a pomocí které je možné nalézt a vyřešit příčiny současných psychických či fyzických potíží.
+	Metoda RUŠ vychází z předpokladu, že to, co se mi děje a je mi nepříjemné, je můj problém a jedině já jej mohu vyřešit.
+	A to snadno, rychle a s výborným výsledkem.
+	Pomůže tomu, kdo se rozhodne vypořádat se se svými starostmi a být šťastný.
+</p>
+<p>
+	Terapie probíhá vsedě a za plného vědomí.
+	Trvá 3 - 4 hodiny, začíná jasným stanovením záměru pro život i terapii,
+	pokračuje popisem problému, nalezením jeho příčiny v dětství,
+	jejím vyřešením přijetím nalezených programů,
+	kontrolou do budoucna a končí příjemným pocitem a úlevou v oblasti života,
+	na které jsme s klientem pracovali.
+	Během terapie dochází k uvědomění, poznání a pochopení souvislostí, k odpuštění sobě i ostatním.
+</p>
+<p>
+	Jsem tady pro ty, kteří se rozhodli vyřešit to, co jim brání být šťastní.
+	Sama jsem si tuto cestu prošla a mohu teď lidem účinně pomáhat či je na jejich cestě inspirovat.
+</p>
+<p>
+	Více informací o metodě najdete na <a target="_blank" href="https://metodarus.cz">www.metodarus.cz</a>,
+	více informací o mně najdete na <a target="_blank" href="http://lenka.pyrasova.cz">lenka.pyrasova.cz</a>.
+</p>
+{/define}
+
+{define ullrichova}
+<p>
+	Moje práce s klienty je založená na individuálním a celostním přístupu, kdy momentální stav a potíže klienta je určující pro výběr použité techniky. Metody, které používám, dokáží přímo ovlivnit činnost vnitřních orgánů a navrátit jim jejich funkčnost, uvolňují svaly, které jsou spojené s potížemi a současně propojené s příslušným orgánem. Pracuji s periferními nervy a vždy se snažím ovlivnit a uvolnit centrální nervovou soustavu, která je řídící pro všechny pochody v těle, tedy i pro psychiku.
+</p>
+<p>
+	Pokud chce někdo prožít hluboké uvolnění, které jde až do roviny alfa (meditační stav, ve kterém je člověku krásně a lehce, kde psychické problémy přestávají člověka stahovat a ovlivňovat, ale naopak je poté možno vidět vše v nadhledu a tudíž provést případné změny, na které dřív člověk neměl sílu a odhodlání), pak je na místě kraniosakrální terapie. Je to velmi jemná, nicméně hluboká technika, která působí na úrovni řízení, kdy tělo dostane impulz, jak má správně pracovat. Jen si vzpomene, co je pro něj přirozené a vrátí se do svého středu a podstaty. Pracuje se přes oblečení, na celém těle, nejvíce pozornosti má hlava.
+</p>
+<p>
+	Věková hranice pro tuto techniku není, lze ji použít i na malých dětech, po operacích (regenerace probíhá rychleji), u těhotných žen (plod se vyvíjí lépe v souladu s harmonickým stavem nastávající maminky, lépe se rodí a děti jsou klidnější).
+</p>
+Zmíněné metody je vhodné použít u těchto obtíží:
+<ul class="skills">
+	<li>bolesti zad, krční páteře, bolesti hlavy, migrény, bolesti kloubů</li>
+	<li>stavy po prodělané boreliose, meningitidě, encefalitidě</li>
+	<li>psychické napětí, deprese, úzkosti, nespavost, celková vyčerpanost</li>
+	<li>neplodnost, bolestivá či nepravidelná menstruace, močová inkontinence</li>
+	<li>chronické záněty močových cest a prostaty</li>
+	<li>pooperační srůsty</li>
+	<li>žaludeční neurózy, poruchy trávení či vyprazdňování</li>
+	<li>výhřezy meziobratlových plotének a jejich následky</li>
+	<li>závratě, hučení v uších</li>
+</ul>
+{/define}
+
+{define duskova}
+<p>
+	„Poznej svou anatomii a fyziologii, jakmile však položíš ruce na tělo člověka, pamatuj, že v něm přebývá živá duše“, Dr. A. T. Still
+</p>
+<p>
+	Moje cesta ke kraniosakrální terapii a dalším jemným technikám vedla přes zdravotnictví, ve kterém se pohybuji více než 30 let.
+	Absolvovala jsem kurzy psychoanalýzy u MUDr. Kodišové, pětileté studium Rogersovské psychoterapie (jedná se o vztahovou psychoterapii),
+	mám osm let praxe v rodinných konstelacích, psychologii komunikace a partnerských vztahů,
+	jsem pracovníkem Amelie Institutu – pomoc onkologicky nemocným a jejich rodinným příslušníkům,
+	výcvik v enneagramu (psychologický a duchovní systém osobnosti).
+	Velmi ráda používám kraniosakrální terapii, která je příjemnou, jemnou a hlavně účinnou metodou pro děti i dospělé.
+	Tato metoda pracuje na principu využití znalosti o cirkulaci mozkomíšního moku, který určitým rytmem pulsuje v těle.
+	Je-li tento rytmus narušen, dochází k nerovnováze a možným fyzickým obtížím.
+</p>
+Terapie probíhá na lůžku, přes oblečení a je určena zejména pro:
+<ul class="skills">
+	<li>potíže psychosomatického původu</li>
+	<li>migrény a bolesti hlavy</li>
+	<li>bolesti zad, kloubů a páteře</li>
+	<li>chronickou rýmu a dýchací potíže (astma, alergie, opakující se záněty)</li>
+	<li>vysoký krevní tlak</li>
+	<li>poruchy zraku a sluchu</li>
+	<li>únavu, stres, nespavost, vyčerpání, strach a úzkost</li>
+	<li>traumata – jejich odblokováním napomáhá i s odstraněním příčin potíží</li>
+	<li>potíže s trávením</li>
+	<li>posílení celkové imunity a vitality organizmu</li>
+</ul>
+{/define}
+
+{define pokorova}
+<p>
+	Stravování je jednou ze základních potřeb našeho fyzického těla,
+	současně každý z nás jako jedinečná bytost potřebujeme něco jiného.
+</p>
+<p>
+	Jsem registrovaný nutriční terapeut a zdravotní sestra z dlouholetou praxí,
+	absolvovala jsem mnoho nutričních seminářů a sama jsem mnohé vedla.
+	Jsem autorkou  knihy „Výživa dialyzovaných pacientů“.
+	Mám bohaté zkušenosti v oboru nefrologie (ledvinová nedostatečnost – predialýza, hemodialýza, peritoneální dialýza).
+</p>
+Nabízím
+<ul class="skills">
+	<li>individuální a lidský přístup při hledání možnosti pomocí stravy upravit a zlepšit kvalitu života</li>
+	<li>propojení klasické medicíny s tradiční čínskou medicínou a ajurvédou</li>
+	<li>respektuji i výživové směry – makrobiotika, vegetariánství, veganství</li>
+	<li>konzultace v oblasti zdravého životního stylu – všechno se vším souvisí</li>
+	<li>analýza nutričního stavu, měření bioimpedančním přístrojem Tanita (hmotnost, množství svalů a tuku v těle včetně tuku viscerálního, zhodnocení pitného režimu, hmotnost kostí, metabolický věk, bazální metabolismus)</li>
+	<li>určení metabolického typu</li>
+	<li>podrobný rozbor stávajícího jídelníčku</li>
+	<li>sestavení nového výživového plánu</li>
+	<li>zohlednění zdravotního stavu (možnost spolupráce s Vaším lékařem – řešení konkrétních zdravotních obtíží stravou - např. dialyzovaní pacienti, cukrovka, vysoký krevní tlak, vysoká hladina cholesterolu, migrény, celiakie, redukce váhy, střevní onemocnění  atd.</li>
+	<li>průběžné konzultace, dlouhodobá péče o klienta</li>
+	<li>poradenství v oblasti suplementace (doplňky výživy)</li>
+	<li>zelené potraviny</li>
+	<li>dárkové poukazy</li>
+</ul>
+{/define}
+{define prochazkova}
+<p>
+	V roce 1997 jsem dokončila bakalářské studium obor FYZIOTERAPIE na FTVS UK.
+	Praktické znalosti jsem získala nejprve v sanatoriu na Dobříši,
+	dále pak v Praze na revmatologicko-rehabilitačním pracovišti,
+	dětské rehabilitaci a v zařízení se zaměřením na pohybovou aktivitu a cvičení.
+	Od roku 2010 ve své praxi využívám jednak klasickou rehabilitaci,
+	ale také znalosti z východní medicíny v podobě japonské masáže – Shiatsu.
+</p>
+{/define}

@@ -1,0 +1,2 @@
+webglyph font character
+f040,f0e8,f028,f022,f5ed,f21b,f576,f24f,f50e,f241,f0c5,f75e,f4d0,f264

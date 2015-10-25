@@ -1,0 +1,35 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+common:
+	includes:
+		- courses.neon
+		- therapist.neon
+ 
+	parameters:
+		owner:
+			name: 'Dům Rukou Světla'
+			mail: 'info@dumrukousvetla.cz'
+
+		backup:
+			name: 'Martin Bubík'
+			mail: 'bubik@flashlink.cz'
+
+	php:
+		date.timezone: Europe/Prague
+		# session.save_path: "%tempDir%/sessions"
+		zlib.output_compression: yes
+
+	nette:
+		application:
+			errorPresenter: Error
+		session:
+			autoStart: smart
+#			expiration: 10 days
+#			cache_expire: 180
+
+production < common:
+development < common:

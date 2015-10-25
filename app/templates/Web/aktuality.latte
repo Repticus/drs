@@ -1,0 +1,607 @@
+{block title}Akce, aktuality, přednášky{/block}
+
+{block optional}
+<link type="text/css" href="gallery.min.css" rel="stylesheet" />
+{/block}
+
+{block content}
+{snippet courses}
+	<div class="course" n:foreach="$courses as $courseKey => $courseData">
+		<h2 title="Název">{$courseData['course']}</h2>
+		{include #$courseKey}
+		<ul>
+			<li class="person" title="Lektor"><strong>{$courseData['lector']}</strong></li>
+			<li class="date" title="Termín konání" n:foreach="$courseData['dates'] as $date">{$date['date']|date:'%d.%m.%Y'} od {$date['date']|date:'%H:%M'} do {$date['end']} h</li>
+			<li class="price" title="Cena">{$courseData['price']} Kč</li>
+		</ul>
+		<div n:snippet="course$courseKey">
+			<div>
+				{if $presenter->course == $courseKey}
+					{include #registration}
+				{else}
+					<a class="ajax button" n:href="registration! $courseKey" rel="nofollow">Registrace</a>
+				{/if}
+			</div>
+			{if isset($courseId) and $courseId == $courseKey}
+				<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
+			{/if}
+		</div>
+		{if isset($courseData['gallery'])}
+			{var $template->name = $courseData['gallery']}
+			{var $template->gallery = $presenter->getGalleryImages($courseData['gallery'])}
+			{include #gallery}
+		{/if}
+		<hr class="clr" n:if="!$iterator->last">
+	</div>
+{/snippet}
+<div class="course">
+	{*    <hr class="clr">
+		 <h2 title="Název">Kurz Qigong I. stupně pro začínající - Bc. Petr Kochlík</h2>
+		 <p>
+			  Kurz je vhodný i pro úplné začátečníky bez jakýchkoli zkušeností - výuka vnímání energie,
+			  nabírání energie, zlepšování její kvality a využití pro zdraví a osobní rozvoj.
+			  Práce s "obrazy mysli", které mají vliv na tělo, energii i mysl a mohou uzdravovat i prodloužit délku života.
+		 </p>
+		 <ul>
+			  <li class="person" title="Lektor"><strong>Bc. Petr Kochlík</strong></li>
+			  <li class="date" title="Termín konání">28.3. - 29.3.2015 od 9:30 do 17:00 h</li>
+		 </ul>
+		 <p class="clr">
+			  Přihlášky a více info na <a target="_blank" href='http://www.zy-qigong.cz/news/kurz-i-stupne-pro-zacinajici-praha/'>www.zy-qigong.cz</a>.
+	</p>
+	*}
+
+	<hr class="clr">
+	<h2 title="Název">Ženský kruh Dany Šitnerové</h2>
+	<p>
+		Kruh žen vytváří prostřednictvím jemných energií inspirativní a příjemné prostředí pro přirozenou cestu podpory a léčení ženských energií.
+		Vede ženy k uvědomění si své jedinečnosti založené na opravdových hodnotách respektu sama k sobě, lásky a úcty.
+		Vzájemné sdílení podporuje ženy na jejich osobní cestě,
+		oživuje zapomenuté tradice ženské moudrosti a vede k nalezení spojení s ženskou duší,
+		intuicí, tvořivostí a citlivostí.
+	</p>
+	<p>
+		Kruh je bezpečným místem pro sdílení životních příběhů, strastí, ale i radostí, protože bez jednoho bychom nepoznali druhé.
+		To vše doplněné o zajímavé informace o biorytmech v daných měsících, zdravém životním stylu, feng shui,
+		aromaterapii a také o praktické cvičení ve formě dechových cvičení, meditace, včetně rodinných a systemických konstelací.
+	</p>
+	<p>
+		Skupina je otevřená a srdečně vítá ženy v každém věku, které mají zájem dozvědět se více o sobě samých.
+		S sebou si vezměte jídlo na celý den (čaj a voda jsou k dispozici), polštářek nebo deku pro pohodlné sezení, tužku a papír na poznámky.
+	</p>
+	<ul>
+		<li class="person" title="Lektor"><strong>Dana Šitnerová</strong></li>
+		<li class="date" title="Termín konání">20.9.2015 od 10:00 do 18:00 h</li>
+		<li class="date" title="Termín konání">18.10.2015 od 10:00 do 18:00 h</li>
+		<li class="date" title="Termín konání">29.11.2015 od 10:00 do 18:00 h</li>
+		<li class="price" title="Cena">1068 Kč</li>
+		<li class="phone" title="Telefon" >+420 736 607 629</li>
+		<li class="mail" title="Email" ><a href="mailto:dana.sitnerova@centrum.cz">dana.sitnerova@centrum.cz</a></li>
+	</ul>
+	<p class="clr">
+		Přihlášky prosím posílejte na výše uvedený email nebo se objednejte telefonicky.
+		Počet míst je omezený.
+	</p>
+
+	<hr class="clr">
+	{*	<h2 title="Název">Kouzelné ketlování se Zdeňkou Ocelíkovou - seminář</h2>
+		<p>
+			Práci s energií můžeme kromě jiného použít také při výrobě energetických šperků - naramků, náušnic, náhrdelníků atd.
+			Tyto mají potom tu moc měnit energii nositele a napomoci mu pozitivně ovlivnit jeho život.
+			Praktickou výrobu šperků, včetně jeho nabití energií, Vás naučím na semináři, na který Vás tímto srdečně zvu.
+			Všechny pomůcky i komponenty na výrobu šperku, který si poté odnesete domů, jsou v ceně semináře.
+			Ten se koná v Domě Rukou Světla, občerstvení na místě je také zajištěno.
+		</p>
+		<ul>
+			<li class="person" title="Lektor"><strong>Zdeňka Ocelíková</strong></li>
+			<li class="date" title="Termín konání">sobota 20.6.2015 od 9 do 12h</li>
+			<li class="price" title="Cena">1300 Kč</li>
+			<li class="phone" title="Telefon" >+420 602 748 729</li>
+			<li class="mail" title="Email" ><a href="mailto:zdenka.ocelikova@seznam.cz">zdenka.ocelikova@seznam.cz</a></li>
+		</ul>
+		<p class="clr">
+			Přihlášky prosím posílejte na výše uvedený email nebo se objednejte telefonicky.
+		</p>
+
+		<hr class="clr">
+	*}
+	<h2 title="Název">Kurz základů kraniosakrální terapie a práce s energií - seminář</h2>
+	<p>
+		Srdečně Vás zveme jménem <b>Zdeňky Ocelíkové</b> na semináře základů kraniosakrální terapie a práce s energií.
+		Další kontakty, přihlášky a informace najdete na <a target="_blank" href='http://www.kranio-sakralni-terapie.cz/kurzy-kraniosakralni-terapie'>stránkách kurzů kraniosakrální terapie</a>.
+	</p>
+	<hr class="clr">
+
+	<h2 title="Název">Atlantské energie - semináře</h2>
+	<p>
+		Srdečně zveme na čtyři semináře o atlantských energiích,
+		které se pod vedením paní <b>Antalii</b> budou věnovat našim hlubokým vnitřním vzpomínkám a mohou nám napomoci k znovunalezení harmonie
+		a vnitřního klidu i v dnešní uspěchané době.
+	</p>
+	<p>
+	</p>
+	<p>
+	</p>
+	<ul>
+		<li class="person" title="Lektor"><strong>Antalii</strong></li>
+		<li class="date" title="Termín konání">19.9.2015 - Křišťálový věk - od 10:00 do 16:00 h</li>
+		<li class="date" title="Termín konání">17.10.2015 - Elementy - od 10:00 do 16:00 h</li>
+		<li class="date" title="Termín konání">28.11.2015 - Žena Bohyně - od 10:00 do 16:00 h</li>
+		<li class="date" title="Termín konání">19.12.2015 - Krystaly Země - od 10:00 do 16:00 h</li>
+		<li class="price" title="Cena">1300 Kč za jednotlivý seminář</li>
+		<li class="mail" title="Email" ><a href="mailto:kliceksrdci@email.cz">kliceksrdci@email.cz</a></li>
+	</ul>
+	<p class="clr">
+		Přihlášku prosím zašlete na výše uvedený email.
+		Podrobné informace najdete na <a target="_blank" href="http://www.kliceksrdci.cz/kalendar-akci/">http://www.kliceksrdci.cz/kalendar-akci/</a>.
+	</p>
+	<hr class="clr">
+
+	<h2 title="Název">Pyramida - harmonizace duše i těla</h2>
+	<p>
+		S radostí sdělujeme, že je u nás nyní možné využívat místnost s pyramidou, která je kopií Cheopsovy pyramidy.
+		Tyto stavby nás provází desítky tisíc let a stále nutí k zamyšlení, k rozpomenutí se na to, co v hloubi duše známe.
+		I dnes nám mají co říci, co ukázat.
+	</p>
+	<p>
+		My všichni si potřebujeme dopřát klid a čas k vystoupení na naši duchovní pyramidu,
+		abychom se pozvedli nad zmatek a starosti běžného života a pohlédli na něj s nadhledem.
+		Pyramida harmonizuje jednak prostor, ve kterém se nachází,
+		jednak působí na bytost nacházející se uvnitř - slouží k meditaci, harmonizaci energetických center,
+		relaxaci a regeneraci, zvyšuje imunitu, zjemňuje a pozvedává vědomí, vede nás k sobě samým.
+	</p>
+	<p>
+		Prosíme, v případě zájmu o bližší informace volejte na telefon 601350474.
+	</p>
+	{var $template->gallery = $presenter->getGalleryImages('pyramid')}
+	{var $template->name = 'pyramid'}
+	{include #gallery}
+</div>
+
+<script type="application/javascript" src="aktuality.min.js"></script>
+{/block}
+
+{define psychosomatika}
+<p>
+	Každý z nás jistě více či méně často cítí obtíže při pohybu, v kloubech, v zádech atd..
+	O psychosomatických souvislostech - bolesti fyzického těla, psychických faktorů a duchovních příčinách vzniku obtíží,
+	o možnostech, jak jim předcházet a jak je zmírnit nám bude přednášet <strong>MUDr. Miroslav Holub</strong>, atestovaný lékař,
+	specialista v oboru rehabilitace, který používá ve své praxi více než 30 let akupunkturu,
+	homeopatii a celostní medicínu.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define imunita}
+<p>
+	Srdečně Vás zveme na přednášku, která se bude týkat těchto okruhů:
+</p>
+<ul class="skills">
+	<li>
+		Imunitní systém chrání náš organismus před vniknutím virů či bakterií a propuknutí nemoci.
+		Dozvíte se, jak je naše tělo přirozeně naprogramováno.
+	</li>
+	<li>
+		Stravování je jedním z faktorů, které se podílejí na posílení obranyschopnosti našeho organismu.
+		Často spoléháme na běžně dostupné lékárenské doplňky stravy, ale jsou opravdu tak nezbytné?
+	</li>
+	<li>
+		Inspirujme se v samotné přírodě. Představíme Vám tzv. zelené potraviny s malou ochutnávkou.
+	</li>
+</ul>
+<p>
+	Přednášejícími jsou paní <strong>Petra Pokorová, DiS.</strong>, registrovaná nutriční terapeutka,
+	která se více než patnáct let zabývá tímto poradenstvím, a dále paní <strong>Mgr. Věra Stádníková</strong>,
+	certifikovaný výživový poradce, zelené potraviny Green Ways (ječmen a chlorela), lektorka jógy.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define cesty}
+<p>
+	Společenský a diskusní program pro všechny,
+	kteří prošli či procházejí úskalím vlastního psychospirituálního vývoje
+	a mají potřebu tuto etapu svého života sdílet, a tím podpořit ostatní.
+	Setkání slouží ke sdílení zkušeností, vzájemnému povzbuzení, podpoře integrace i integrity,
+	k možnosti svobodného projevení se a také k rozvoji tolerance, soucitu a vzájemné úcty.
+</p>
+<p>
+	Pořadem provází <strong>MUDr. Soňa Hájková</strong> a <strong>Břetislav Čtvrtek</strong>.
+	Více informací na <a target="_blank" href="http://www.centrumprirodnilecby.cz/pdf/cesty.pdf">stránkách centrumprirodnilecby.cz</a>.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+{define mineraly}
+<p>
+	Již v dávných dobách naši předkové znali sílu minerálů a polodrahokamů a dovedli ji využívat.
+	Vydejme se na cestu poznání těchto bytostí.
+	Na setkání s <strong>Yvett Holou - Amalakí</strong> se dozvíme jak s nimi pracovat, jak je čistit a pečovat o ně, jak je nosit a používat.
+	Přineste si s sebou své oblíbené kamínky či šperky – ať již na ukázku,
+	tak i ty, které již nepotřebujete, ale které by mohly pomoci zase někomu jinému.
+	Součástí setkání bude výměnná burza, aby se tyto bytosti mohly pohybovat a žít mezi námi a s námi.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+{define lunarniSystem}
+<p>
+	Srdečně Vás zveme na přednášku, kde se dozvíme podle data našeho narození,
+	v jakém regentu jsme zrozeni a jaké elementy (dřevo-oheň-země-kov-voda) u tohoto regentu převládají.
+	Naučíme se vzájemné vztahy a jejich slučitelnost, tedy tajemství sympatičnosti či naopak nesourodosti vztahů.
+	Připomeneme si z jakého přediva jsme v tomto vtělení upředeni a že každý jsme jedinečný a stejně dobrý jako jiná bytost.
+</p>
+<p>
+	Přednášet bude paní <strong>Yvett Holá</strong>, terapeutka, mistr shiatsu, absolventka Mezinárodního institutu akupunktury a orientálních věd,
+	jehož zakladatelem byl mistr Michio Kushi, s atestací z manuální lymfodrenáže u MUDr. Miroslava Bechyně, CSc.,
+	zakladatele a primáře 1. lymfologického pracoviště na Dermatovenerologické klinice FN Na Bulovce v r. 1992.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define analyza}
+<p>
+	V lidském těle se vyskytuje mnoho druhů mikroorganismů, jak užitečných, tak i těch škodlivých (patogenních) – jako jsou viry, plísně, bakterie a parazité.
+	Frekvenční analýza je založena na zjištění že každý mikroorganismus vysílá své specifické frekvence.
+	Výsledkem měření na švýcarském přístroji Fscan3 je přesné určení frekvencí patogenních mikroorganismů ve vašem těle.
+	Přístroj není vhodný v těhotenství a v případě kardiostimulátoru.
+	Analýza frekvencí trvá přibližně 40 minut.
+</p>
+<p>
+	Jednotliví zájemci jsou objednáváni vždy na celou hodinu.
+	Při registraci prosím uveďte Vámi preferovanou hodinu do poznámky.
+	Registraci Vám pak písemně potvrdíme nebo nabídneme alternativu.
+</p>
+{/define}
+
+{define lymfa}
+<p>
+	Srdečně Vás zveme na přednášku o lymfatickém systému, který je nezbytný pro vylučování škodlivých látek z těla,
+	pro zvyšování imunity a schopnosti našeho těla se čistit.
+	Manuální lymfodrenáž, jako jemná technika harmonizující náš lymfatický systém,
+	je důležitá jak pro prevenci, tak pro zlepšení pooperačních stavů organismu, snižuje únavu a otoky.
+	Přednáška bude s praktickými ukázkami základních technik pro osobní použití.
+</p>
+<p>
+	Přednášet bude paní <strong>Yvett Holá</strong>, terapeutka, mistr shiatsu, absolventka Mezinárodního institutu akupunktury a orientálních věd,
+	jehož zakladatelem byl mistr Michio Kushi, s atestací z manuální lymfodrenáže u MUDr. Miroslava Bechyně, CSc.,
+	zakladatele a primáře 1. lymfologického pracoviště na Dermatovenerologické klinice FN Na Bulovce v r. 1992.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define stravovani}
+<p>
+	Srdečně zveme na přednášku, která se bude věnovat výběru vhodných potravin v souladu s přírodou a skutečnými potřebami člověka,
+	rizikovým faktorům stravování a nemocem ze stravování, dietám, psychosomatice, duchovním principům stravování.
+</p>
+<p>
+	Naše pozvání přijal <strong>MUDr. Miroslav Holub</strong>, atestovaný lékař - specialista v oboru rehabilitace (32let), který používá ve své praxi akupunkturu (33let), homeopatii (23let) a celostní medicínu (18let). Absolvent kurzů akupunktury, homeopatie, diagnostiky EAV, zahraničních stáží v Číně, Thajsku a na Srí Lance. Organizátor celostátních konferencí věnovaných holistické medicíně. Ve své praxi uplatňuje zásady správné životosprávy, především stravování.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define diagnostika}
+<p>
+	Srdečně Vás zveme na přednášku Diagnostika z tváře a tělesné konstituce,
+	která nám prozradí možnosti rozpoznání našeho aktuálního zdravotního stavu včetně zdravotních tendencí,
+	životní linie od dětství k stáří, charakterové vlastnosti, informace o našich blízkých příbuzných a mnoho dalších zajímavých věcí.
+	Budeme se učit na sobě, prosím, přineste si zrcátko.
+</p>
+<p>
+	Přednášet bude paní <strong>Yvett Holá</strong>, terapeutka, mistr shiatsu,
+	absolventka Mezinárodního institutu akupunktury a orientálních věd, jehož zakladatelem byl mistr Michio Kuchi.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define aura}
+<p>
+	Srdečně zveme na <a n:href="Web:fotografovaniAury">fotografování aury</a> p. <strong>Evženem Paulíčkem</strong>,
+	který Vás vyfotografuje a současně podá hodinový výklad Vaší aury.
+	Aura je jemné energetické pole, které kolem sebe vyzařuje každý člověk.
+	Zrcadlí náš charakter, vlastnosti, zdravotní stav, duševní vývoj a duchovní podstatu.
+	Barvy aury a jejich prolínání odráží celkový stav ducha a těla.
+	U každého z nás je specifická a mění se během života tak, jak se mění i naše prožívání a zkušenosti.
+</p>
+<p>
+	Jednotliví zájemci jsou objednáváni vždy na celou hodinu.
+	Při registraci prosím uveďte Vámi preferovanou hodinu do poznámky.
+	Registraci Vám pak písemně potvrdíme nebo nabídneme alternativu.
+</p>
+{/define}
+
+{define auraprednaska}
+<p>
+	Srdečně zveme na přednášku u auře, která jako jemné energetické pole je naší stálou součástí,
+	byť lidským okem běžně nepostřehnutelnou.
+	Aura o nás vypovídá více, než si rozumem dovedeme představit.
+	Více informací o ní naleznete v akci <a n:href="Web:fotografovaniAury">fotografování aury</a>.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define nikken}
+<p>
+	Rádi bychom vás pozvali na prezentaci o firmě Nikken, která již více než 35 let ve světě nabízí lidem nalézat rovnováhu a zdravý životní styl.
+	Dozvíte se základní principy a myšlenky, které Nikken nabízí, a budete si moci vyzkoušet originální produkty a zdravotní pomůcky,
+	které se dají použít při prevenci nebo na ulehčení závažných stavů.
+</p>
+<p>
+	Vzhledem k omezené kapacitě místa, prosíme o registraci a potvrzení vaší účasti.
+</p>
+{/define}
+
+{define biorytmy}
+<p>
+	Srdečně zveme na přednášku <strong>Biorytmy v našem životě</strong>, která se bude věnovat využití biorytmů (denních, měsíčních, ročních a sedmiletých) v praktickém životě, diagnostickým a léčebným souvislostem.
+</p>
+<p>
+	Naše pozvání přijal <strong>MUDr. Miroslav Holub</strong>, atestovaný lékař - specialista v oboru rehabilitace (32let),
+	který používá ve své praxi akupunkturu (33let), homeopatii (23let) a celostní medicínu (18let).
+	Absolvent kurzů akupunktury, homeopatie, diagnostiky EAV, zahraničních stáží v Číně, Thajsku a na Srí Lance.
+	Organizátor celostátních konferencí věnovaných holistické medicíně.
+	Ve své praxi uplatňuje zásady správné životosprávy, především stravování.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define zivotosprava}
+<p>
+	Srdečně zveme na přednášku, která se bude zabývat východním pohledem na problematiku zdravého životního stylu, včetně stravování.
+	Připomeneme si také například a zejména před nadcházejícím zimním období, jak posílit obranyschopnost těla i duše.
+	V rámci diskuse bude určitě možné se zeptat na to, co Vás zajímá, např. na problematiku očkování a další.
+</p>
+<p>
+	Naše pozvání přijal <strong>MUDr. Miroslav Holub</strong>, atestovaný lékař - specialista v oboru rehabilitace (32let),
+	který používá ve své praxi akupunkturu (33let), homeopatii (23let) a celostní medicínu (18let).
+	Absolvent kurzů akupunktury, homeopatie, diagnostiky EAV, zahraničních stáží v Číně, Thajsku a na Srí Lance.
+	Organizátor celostátních konferencí věnovaných holistické medicíně.
+	Ve své praxi uplatňuje zásady správné životosprávy, především stravování.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define psychomedicina}
+<p>
+	Srdečně zveme na přednášku <strong>Psychosomatická medicína</strong>,
+	která se bude věnovat klinickým souvislostem mezi projevy nemocí fyzického těla a naší psychikou,
+	negativním emocím v příčinách nemocí, příkladům z praxe.
+</p>
+<p>
+	Naše pozvání přijal <strong>MUDr. Miroslav Holub</strong>,
+	atestovaný lékař - specialista v oboru rehabilitace (32let),
+	který používá ve své praxi akupunkturu (33let), homeopatii (23let) a celostní medicínu (18let).
+	Absolvent kurzů akupunktury, homeopatie, diagnostiky EAV, zahraničních stáží v Číně, Thajsku a na Srí Lance.
+	Organizátor celostátních konferencí věnovaných holistické medicíně.
+	Ve své praxi uplatňuje zásady správné životosprávy, především stravování.
+	Více informací naleznete na <a target="_blank" href="http://www.mirhol.cz">www.mirhol.cz</a>.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define teloduse}
+<p>
+	Srdečně zveme na přednášku <strong>Hranice mezi tělem a duší</strong>,
+	která se bude věnovat psychosomatice v příčinách nemocí - holistickému pohledu na fyzické,
+	psychické a duchovní příčiny zdravotních problémů našeho těla a nemocí, systému čaker.
+</p>
+<p>
+	Naše pozvání přijal <strong>MUDr. Miroslav Holub</strong>,
+	atestovaný lékař - specialista v oboru rehabilitace (32let),
+	který používá ve své praxi akupunkturu (33let), homeopatii (23let) a celostní medicínu (18let).
+	Absolvent kurzů akupunktury, homeopatie, diagnostiky EAV, zahraničních stáží v Číně, Thajsku a na Srí Lance.
+	Organizátor celostátních konferencí věnovaných holistické medicíně.
+	Ve své praxi uplatňuje zásady správné životosprávy, především stravování.
+	Počet míst je omezen, prosím o registraci.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define qigong}
+<p>
+	Srdečně zveme na přednášku o <strong>Qigongu</strong>  (známe také pod označením <strong>čchi-kung</strong>), starém čínském umění vhodném pro každého.
+	V Qigongu se pracuje s tělem, s dechem, s několika druhy energie, s myslí, vědomím,
+	informací a také s obrazy mysli, které ovlivňují celou lidskou bytost.
+</p>
+<p>
+	Přednášející p. <strong>Petr Kochlík</strong> se tomuto cvičení věnuje již od roku 1995, byl mnohokrát v Číně a je osobním žákem čínského Mistra Xu Mingtang.
+	Více o přednášejícím na <a target="_blank" href="http://www.zy-qigong.cz/o-mne/">www.zy-qigong.cz/o-mne</a>.
+</p>
+<p>
+	Pokud vás zajímá zdravý způsob života, duchovní rozvoj a nalezení harmonie,
+	nebo jen potřebujete více energie a zbavit se napětí a stresu,
+	neváhejte a přijďte se seznámit s tímto cvičením.
+	Více info o Qigongu také naleznete na <a target="_blank" href="http://www.zy-qigong.cz/">www.zy-qigong.cz</a>.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define esence}
+<p>
+	Esence představují jednoduchý a zároveň velice účinný systém zvládání negativních emocí.
+	Jsou užitečné při překonávání krizových okamžiků života, náročných jak psychicky, tak fyzicky.
+	Pomáhají k navrácení harmonie mysli, duše i těla a tím i nastartování přirozené obranyschopnosti organismu.
+</p>
+<p>
+	Naše pozvání přijala <strong>MUDr. Klára Zelenayová</strong>,
+	která pracuje jako lékařka v oboru neurologie a rehabilitace a ve své praxi často využívá i alternativní metody,
+	zejména akupunkturu a Bachovy květové esence.
+	Těmito esencemi úspěšně pomáhá pacientům již několik let.
+	V rámci této přednášky vás seznámí s historií, principy a možnostmi léčby Bachovými květovými esencemi.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+	<strong>Uzávěrka přihlášek  je v pátek 13.3.2015.</strong>
+</p>
+{/define}
+
+{define konstelace}
+<p>
+	Rodinné konstelace nám mohou pomoci s řešením našich životních starostí,
+	pomoci pochopit a změnit navyklé vzorce chování v určitých situacích.
+	Umožňují názorně ukázat a pocítit souvislosti a vztahy mezi členy rodiny, případně členy širších systémů.
+	V rodinných osudech se některé příběhy opakují.
+	Pokud jsou podobnosti v příbězích  nápadné, mohou se jejich aktéři ptát po příčině.
+	Rodinné konstelace nabízejí jeden z pohledů na nevědomou rodinnou dynamiku.
+</p>
+<p>
+	Srdečně zveme na rodinné konstelace s paní <strong>Věrou Horákovou</strong>,
+	která se této metodě věnuje aktivně již deset let.
+	Potřebné vzdělání pro zvládnutí konstelací získala během dvouletého výcviku u Bhagata, jednoho z průkopníků této metody u nás.
+	U něj též absolvovala výcvik v neurolingvistickém programování a hypnóze.
+	Při stavění konstelací jí také pomáhají bohaté dvacetileté leté zkušenosti v roli regresní terapeutky.
+</p>
+<p>
+	Registrace prostřednictvím těchto stránek - účast i žádost o stavění konstelace,
+	prosím,	objednávejte nejpozději do 10.4.2015, kdy je uzávěrka přihlášek.
+	V případě zájmu o postavení konstelace se účtuje příplatek 500 Kč.
+	Minimální počet účastníků je deset.
+</p>
+{/define}
+
+{define ordinace}
+<p>
+	Srdečně zveme na přednášku, která se bude dotýkat těchto témat:
+</p>
+<ul class="skills">
+	<li>kdo je nejlepším "lékařem" pro vaše děti i vás samotné</li>
+	<li>jak si doma poradit s nejčastějšími zdravotními problémy</li>
+	<li>kdy je čas přestat se samoléčbou a vydat se k lékaři</li>
+	<li>proč jsme my i naše děti navzdory rostoucí lékařské péči stále více nemocní</li>
+</ul>
+<p class="clr">
+	Naše pozvání přijala <strong>MUDr. Helena Bartůšková</strong>, která 18 let pracuje jako dětská lékařka a která říká:
+	Vzhledem k tomu, že jsem při své práci narazila na omezené možnosti klasické medicíny při léčbě opakovaných či chronických onemocnění,
+	vystudovala jsem také homeopatii (kterou používám již 11 let), hypnózu a v současné době studuji ještě ajurvédu.
+	Při léčbě upřednostňuji celostní přístup - přístup, který bere do úvahy člověka,
+	včetně jeho psychiky, jako celek a neléčí pouze izolované onemocnění či orgán.
+	Dle mého přesvědčení by lékař měl působit pouze jako průvodce člověka při cestě za zdravím,
+	přičemž je volba každého jedince, jakou cestu si zvolí.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+{define diety}
+<p>
+	Srdečně zveme na povídání o tématu, se kterým se v životě občas setkáme všichni.
+	Co v nás vyvolává slovo dieta?
+	Strava a její vlastnosti.
+	Racionální stravování.
+	Jednotlivé složky potravy.
+	Nejčastěji používané diety.
+	Zdravé hubnutí.
+	Hubneme sportem.
+</p>
+<p>
+	Přednášející je paní <strong>Petra Pokorová, DiS.</strong>, registrovaná nutriční terapeutka,
+	která se více než patnáct let tímto poradenstvím zabývá.
+</p>
+{/define}
+
+{define prekyseleni}
+<ul class="skills">
+	<li>V našem organismu probíhá celá řada chemických reakcí.Jaké jsou pro tělo přirozené, a co můžeme ovlivnit stravou?</li>
+	<li>Překyselení organismu a ......padání vlasů, celulitida, zápach z úst, pálení žáhy, kožní onemocnění, artróza, osteoporóza, nádorové onemocnění... Jak to spolu souvisí?</li>
+	<li>Co je příčinou překyselení organismu? Mohu tento stav změnit? Jak hýčkat svoje zdraví?</li>
+</ul>
+<p>
+	Srdečně zveme na setkání s paní <strong>Petrou Pokorovou</strong>, registrovanou nutriční terapeutkou.
+	Povídat si budeme na téma aktuální a z hlediska zdraví velmi podstatné.
+	Všichni přítomní obdrží tabulku působení potravin na pH v našem těle.
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{define vnitrnicesta}
+<p>
+	Cesta k sobě je pro mne oslava okamžiku, oslava toho, že můžu být tady a teď.
+	Je projevem radosti, ztišení, odpuštěním, prosbou, darem, léčením, meditací, nasloucháním, … pomáhá mi objevovat, kdo jsem.
+</p>
+<p>
+	Zveme vás všechny na prožití tohoto okamžiku.
+	Přijďte se podílet na vytvoření společného prostoru, který nám umožní společně vnímat energii světla, lásky, pokory a laskavosti v nás.
+	Zván je každý hledající, kdo má otevřené srdce a touhu se propojit.
+</p>
+<p>
+	Katka Špačková je absolventkou Školy přírodní léčby MUDr. Soni Hájkové.
+	Na své cestě se zaměřuje na pomoc hledajícím, průvodcovství, podporu a snahu porozumět situacím, které nás potkávají v našem životě.
+	Sama o sobě říká:
+	„Jsem tu pro Vás, abyste pochopili a spatřili vlastní hodnotu, důležitost vlastní cesty,
+	abyste našli sami sebe, své poslání a smysl svého života na Zemi - tady a teď.
+	V mém otevřeném srdci je místo pro všechny.
+	Každý je vítán.“
+</p>
+<p>
+	Počet míst je omezen, prosím o registraci.
+</p>
+{/define}
+
+{block #gallery}
+<div class="gallery clr">
+	{foreach $gallery as $image}
+		<a href="{$image['fl']}" rel="{$name}[i]">
+			<img src="{$image['sm']}" alt="" />
+		</a>
+	{/foreach}
+</div>
+{/block}
+
+{block #registration}
+{form courseRegistration, "class"=>"ajax"}
+	<table>
+		<tr>
+			<td>{input name}</td>
+			<td rowspan="5">{input note}</td>
+		</tr>
+		<tr>
+			<td>{input email}</td>
+		</tr>
+		<tr>
+			<td>{input phone}</td>
+		</tr>
+		<tr>
+			<td>{input date}</td>
+		</tr>
+		<tr>
+			<td>{input person}</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				{input send}
+				{input storno}
+			</td>
+		</tr>
+	</table>
+	{input spamtest}
+{/form}
+{/block}

@@ -1,0 +1,68 @@
+<html lang="cs">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>{include #title}</title>
+	</head>
+	<body style="margin:0px;padding:12px;color:#72340b;font-size:12px;font-family:Helvetica,Arial,sans-serif">
+		<div style="width:500px;margin:auto">
+			{block #body}{/block}
+		</div>
+	</body>
+</html>
+
+{define #data}
+<table style="font-size:12px;margin-bottom:12px;border-spacing:0px;background-color:#bd7e2f;border:1px solid #af6025;border-radius:6px;float:left">
+	<tr>
+		<td colspan="2" style="padding:4px;font-weight:bold;text-align:center;">
+			Registrační údaje
+		</td>
+	</tr>
+	<tr n:foreach="$personalData as $field">
+		<td style="padding:4px;border-top:1px solid #af6025;border-right:1px solid #af6025;background-color:#ca973b;text-align:right;vertical-align:top;{if $iterator->first}width:80px;{/if}{if $iterator->last}border-bottom-left-radius:6px{/if}">
+			{$field['caption']}:
+		</td>
+		<td style="padding:4px;border-top:1px solid #af6025;font-style:italic;background-color:#d9b346;{if $iterator->first}width:410px;{/if}{if $iterator->last}border-bottom-right-radius:6px{/if}">
+			{$field['value']}
+		</td>
+	</tr>
+</table>
+<table style="font-size:12px;margin-bottom:12px;border-spacing:0px;background-color:#bd7e2f;border:1px solid #af6025;border-radius:6px;float:left">
+	<tr>
+		<td colspan="2" style="padding:4px;font-weight:bold;text-align:center;">
+			Informace
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:4px;border-top:1px solid #af6025;border-right:1px solid #af6025;background-color:#ca973b;text-align:right;width:80px">
+			Název akce
+		</td>
+		<td style="padding:4px;border-top:1px solid #af6025;font-style:italic;background-color:#d9b346;width:410px">
+			{$courseData['course']}
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:4px;border-top:1px solid #af6025;border-right:1px solid #af6025;background-color:#ca973b;text-align:right">
+			Lektor
+		</td>
+		<td style="padding:4px;border-top:1px solid #af6025;font-style:italic;background-color:#d9b346">
+			{$courseData['lector']}
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:4px;border-top:1px solid #af6025;border-right:1px solid #af6025;background-color:#ca973b;text-align:right">
+			Termín konání
+		</td>
+		<td style="padding:4px;border-top:1px solid #af6025;font-style:italic;background-color:#d9b346">
+			{$courseData['dates'][$date]['date']|date:'%d.%m.%Y'} od {$courseData['dates'][$date]['date']|date:'%H:%M'} h do {$courseData['dates'][$date]['end']} h
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:4px;border-top:1px solid #af6025;border-right:1px solid #af6025;background-color:#ca973b;text-align:right;border-bottom-left-radius:6px">
+			Cena
+		</td>
+		<td style="padding:4px;border-top:1px solid #af6025;font-style:italic;background-color:#d9b346;border-bottom-right-radius:6px">
+			{$courseData['price']} Kč
+		</td>
+	</tr>
+</table>
+{/define}
