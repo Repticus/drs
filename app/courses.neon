@@ -15,10 +15,16 @@ parameters:
 			price: 990
 			dates:
 				-
-					date: '23.10.2015 9:00'
+					date: '27.11.2015 9:00'
 					end: '17:00'
 				-
-					date: '27.11.2015 9:00'
+					date: '5.2.2016 9:00'
+					end: '17:00'
+				-
+					date: '8.4.2016 9:00'
+					end: '17:00'
+				-
+					date: '3.6.2016 9:00'
 					end: '17:00'
 		ordinace:
 			course: 'Na co není v ordinaci čas, aneb jak si poradit bez lékaře - přednáška'
@@ -28,14 +34,6 @@ parameters:
 				-
 					date: '10.9.2015 18:30'
 					end: '20:30'
-		vnitrnicesta:
-			course: 'Sdílení vnitřní cesty – setkání s Katkou'
-			lector: 'Katka Špačková'
-			price: 100
-			dates:
-				-
-					date: '20.10.2015 18:00'
-					end: '19:30'
 		zivotosprava:
 			course: 'Životospráva aneb cesta ke zdraví - přednáška'
 			lector: 'MUDr. Miroslav Holub'
@@ -52,6 +50,30 @@ parameters:
 				-
 					date: '20.11.2015 18:30'
 					end: '21:00'
+		vnitrnicesta:
+			course: 'Obřad Adventního rozjímání - setkání s Katkou'
+			lector: 'Katka Špačková'
+			price: 100
+			dates:
+				-
+					date: '24.11.2015 18:00'
+					end: '19:30'
+		detidetem:
+			course: 'Děti dětem, aneb jemné pohlazení – přednáška s terapeutickou ukázkou'
+			lector: 'Lucie Pospíšilová'
+			price: 100
+			dates:
+				-
+					date: '27.11.2015 18:30'
+					end: '20:00'
+		oslavavanoc:
+			course: 'Oslava příchodu Vánoc - setkání s Katkou'
+			lector: 'Katka Špačková'
+			price: 150
+			dates:
+				-
+					date: '18.12.2015 18:00'
+					end: '20:00'
 		psychosomatika:
 			course: 'Bolesti v hybném systému a jejich psychosomatické souvislosti - přednáška'
 			lector: 'MUDr. Miroslav Holub'
