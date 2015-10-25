@@ -40,12 +40,6 @@ parameters:
 			mail: 'lenka@pyrasova.cz'
 			web: 'lenka.pyrasova.cz'
 
-		ullrichova:
-			name: 'Jana Ullrichová, DiS.'
-			phone: '+420 739 301 739'
-			mail: 'j.ullrichova@seznam.cz'
-			web: 'www.jemnydotek.cz'
-
 		duskova:
 			name: 'Gabriela Dušková'
 			phone: '+420 737 788 917'
