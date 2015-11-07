@@ -74,6 +74,22 @@ parameters:
 				-
 					date: '18.12.2015 18:00'
 					end: '20:00'
+		detisoucasnosti:
+			course: 'Děti současnosti - přednáška'
+			lector: 'Věra Klucká'
+			price: 200
+			dates:
+				-
+					date: '9.2.2016 18:00'
+					end: '20:00'
+		ockovani:
+			course: 'Očkování z pohledu pediatra - homeopata - přednáška'
+			lector: 'MUDr. Helena Bartůšková'
+			price: 150
+			dates:
+				-
+					date: '19.2.2016 18:30'
+					end: '20:00'
 		psychosomatika:
 			course: 'Bolesti v hybném systému a jejich psychosomatické souvislosti - přednáška'
 			lector: 'MUDr. Miroslav Holub'
