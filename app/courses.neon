@@ -74,6 +74,14 @@ parameters:
 				-
 					date: '18.12.2015 18:00'
 					end: '20:00'
+		oslavazenstvi:
+			course: 'Oslava ženství - jóga, tanec, meditace, EFT'
+			lector: 'Klára Stejskalová, Dana Junková, Petra Simeona Wágnerová'
+			price: 1500
+			dates:
+				-
+					date: '20.12.2015 10:00'
+					end: '18:00'
 		detisoucasnosti:
 			course: 'Děti současnosti - přednáška'
 			lector: 'Věra Klucká'
