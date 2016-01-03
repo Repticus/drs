@@ -58,6 +58,14 @@ parameters:
 				-
 					date: '24.11.2015 18:00'
 					end: '19:30'
+		vnitrnicesta2:
+			course: 'Sdílení vnitřní cesty - setkání s Katkou'
+			lector: 'Katka Špačková'
+			price: 100
+			dates:
+				-
+					date: '5.2.2016 18:00'
+					end: '19:30'
 		detidetem:
 			course: 'Děti dětem, aneb jemné pohlazení – přednáška s terapeutickou ukázkou'
 			lector: 'Lucie Pospíšilová'
