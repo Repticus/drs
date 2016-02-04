@@ -82,14 +82,6 @@ parameters:
 				-
 					date: '18.12.2015 18:00'
 					end: '20:00'
-		oslavazenstvi:
-			course: 'Oslava ženství - jóga, tanec, meditace, EFT'
-			lector: 'Klára Stejskalová, Dana Junková, Petra Simeona Wágnerová'
-			price: 1500
-			dates:
-				-
-					date: '20.12.2015 10:00'
-					end: '18:00'
 		detisoucasnosti:
 			course: 'Děti současnosti - přednáška'
 			lector: 'Věra Klucká'
@@ -98,6 +90,14 @@ parameters:
 				-
 					date: '9.2.2016 18:00'
 					end: '20:00'
+		oslavazenstvi:
+			course: 'Oslava ženství - jóga, tanec, meditace, EFT'
+			lector: 'Klára Stejskalová, Dana Junková, Petra Simeona Wágnerová'
+			price: 1500
+			dates:
+				-
+					date: '14.2.2016 10:00'
+					end: '18:00'
 		ockovani:
 			course: 'Očkování z pohledu pediatra - homeopata - přednáška'
 			lector: 'MUDr. Helena Bartůšková'
@@ -105,6 +105,22 @@ parameters:
 			dates:
 				-
 					date: '19.2.2016 18:30'
+					end: '20:00'
+		Biodynamika:
+			course: 'Biodynamické masáže - přednáška'
+			lector: 'Bc. Alexandra Klozová'
+			price: 150
+			dates:
+				-
+					date: '18.3.2016 18:30'
+					end: '20:00'
+		holistika:
+			course: 'Základní principy holistické medicíny - přednáška'
+			lector: 'MUDr. Miroslav Holub'
+			price: 200
+			dates:
+				-
+					date: '15.4.2016 18:30'
 					end: '20:00'
 		psychosomatika:
 			course: 'Bolesti v hybném systému a jejich psychosomatické souvislosti - přednáška'
