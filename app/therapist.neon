@@ -1,52 +1,34 @@
 parameters:
 	therapist:
-
 		ctvrtek:
 			name: 'Břetislav Čtvrtek'
 			phone: '+420 601 350 474'
 			mail: 'info@dumrukousvetla.cz'
 			web: 'www.dumrukousvetla.cz/cesta'
-
 		fantova:
 			name: 'Ing. Martina Fantová'
 			phone: '+420 601 350 474'
 			mail: 'martinavel@seznam.cz'
-
-		zelenayova:
-			name: 'MUDr. Klára Zelenayová'
-			phone: '+420 705 219 914'
-			mail: 'zelenayka@seznam.cz'
-
 		ocelikova:
 			name: 'Zdeňka Ocelíková'
 			phone: '+420 602 748 729'
 			mail: 'zdenka.ocelikova@seznam.cz'
 			web: 'www.kranio-sakralni-terapie.cz'
-
 		klozova:
 			name: 'Bc. Alexandra Klozová'
 			phone: '+420 732 186 214'
 			mail: 'alex.kloz@centrum.cz'
 			web: 'www.telo-duse-energie.cz'
-
 		prochazkova:
 			name: 'Bc. Jitka Procházková'
 			phone: '+420 777 666 755'
 			mail: 'prochazkovajitka@post.cz'
-
 		pyrasova:
 			name: 'Ing. Lenka Pyrasová'
 			phone: '+420 725 173 409'
 			mail: 'lenka@pyrasova.cz'
 			web: 'lenka.pyrasova.cz'
-
-		duskova:
-			name: 'Gabriela Dušková'
-			phone: '+420 737 788 917'
-			mail: 'duskovag@seznam.cz'
-
-		pokorova:
-			name: 'Petra Pokorová, DiS'
-			phone: '+420 607 701 570'
-			mail: 'petra.pokorova@vyzivapodkontrolou.cz'
-			web: 'www.vyzivapodkontrolou.cz'
+		zelenayova:
+			name: 'MUDr. Klára Zelenayová'
+			phone: '+420 705 219 914'
+			mail: 'zelenayka@seznam.cz'
