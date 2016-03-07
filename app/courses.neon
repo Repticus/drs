@@ -26,6 +26,20 @@ parameters:
 				-
 					date: '3.6.2016 9:00'
 					end: '17:00'
+		numerologie:
+			course: 'Numerologický rozbor'
+			lector: 'Jaroslava Žaludová'
+			price: '800/1000'
+			dates:
+				-
+					date: '6.4.2016 9:00'
+					end: '17:00'
+				-
+					date: '4.5.2016 9:00'
+					end: '17:00'
+				-
+					date: '1.6.2016 9:00'
+					end: '17:00'
 		ordinace:
 			course: 'Na co není v ordinaci čas, aneb jak si poradit bez lékaře - přednáška'
 			lector: 'MUDr. Helena Bartůšková'
