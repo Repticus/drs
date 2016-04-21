@@ -150,7 +150,7 @@ parameters:
 			price: 100
 			dates:
 				-
-					date: '13.5.2017 18:00'
+					date: '13.5.2016 18:00'
 					end: '19:30'
 		zenskaLinie:
 			course: 'Matka a ženská linie - seminář'
@@ -168,6 +168,14 @@ parameters:
 				-
 					date: '17.6.2016 17:00'
 					end: '21:00'
+		relaxaceGongem:
+			course: 'Relaxace s gongem'
+			lector: 'Dana Šitnerová'
+			price: 200
+			dates:
+				-
+					date: '3.6.2016 18:30'
+					end: '20:00'
 		psychosomatika:
 			course: 'Bolesti v hybném systému a jejich psychosomatické souvislosti - přednáška'
 			lector: 'MUDr. Miroslav Holub'
