@@ -171,7 +171,7 @@ parameters:
 		relaxaceGongem:
 			course: 'Relaxace s gongem'
 			lector: 'Dana Šitnerová'
-			price: 200
+			price: 400
 			dates:
 				-
 					date: '3.6.2016 18:30'
