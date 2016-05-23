@@ -315,3 +315,11 @@ parameters:
 				-
 					date: '18.4.2015 10:00'
 					end: '16:00'
+		harmonieVztahu:
+			course: 'Cesta k harmonii vztahů - setkání s Katkou'
+			lector: 'Katka Špačková'
+			price: 100
+			dates:
+				-
+					date: '21.6.2016 18:00'
+					end: '19:30'
