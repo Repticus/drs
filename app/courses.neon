@@ -165,14 +165,6 @@ parameters:
 				-
 					date: '17.6.2016 17:00'
 					end: '21:00'
-		relaxaceGongem:
-			course: 'Relaxace s gongem'
-			lector: 'Dana Šitnerová'
-			price: 400
-			dates:
-				-
-					date: '3.6.2016 18:30'
-					end: '20:00'
 		psychosomatika:
 			course: 'Bolesti v hybném systému a jejich psychosomatické souvislosti - přednáška'
 			lector: 'MUDr. Miroslav Holub'
@@ -320,6 +312,24 @@ parameters:
 				-
 					date: '21.6.2016 18:00'
 					end: '19:30'
+		relaxaceGongem:
+			course: 'Relaxace s gongem'
+			lector: 'Dana Šitnerová'
+			price: 400
+			gallery: 'gong'
+			dates:
+				-
+					date: '9.9.2016 18:30'
+					end: '20:00'
+				-
+					date: '23.9.2016 18:30'
+					end: '20:00'
+				-
+					date: '4.11.2016 18:30'
+					end: '20:00'
+				-
+					date: '9.12.2016 18:30'
+					end: '20:00'
 		zamer:
 			course: 'ZÁMĚR na rok 2017 – seminář s paní Věrou Kluckou'
 			lector: 'Věra Klucká'
