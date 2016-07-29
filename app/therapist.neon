@@ -23,11 +23,16 @@ parameters:
 			name: 'Bc. Jitka Procházková'
 			phone: '+420 777 666 755'
 			mail: 'prochazkovajitka@post.cz'
-		pyrasova:
-			name: 'Ing. Lenka Pyrasová'
+		pankova:
+			name: 'Ing. Lenka Pánková'
 			phone: '+420 725 173 409'
 			mail: 'lenka@pyrasova.cz'
 			web: 'lenka.pyrasova.cz'
+		adonai:
+			name: 'Filip Adonai'
+			phone: '+420 606 553 614'
+			mail: 'my3@bytvsrdci.org'
+			web: 'www.bytvsrdci.org'
 		zelenayova:
 			name: 'MUDr. Klára Zelenayová'
 			phone: '+420 705 219 914'
