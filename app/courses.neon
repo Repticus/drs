@@ -53,6 +53,14 @@ parameters:
 				-
 					date: '9.10.2015 18:30'
 					end: '21:00'
+		vnitrnicesta2:
+			course: 'Sdílení vnitřní cesty - meditační setkání s Katkou'
+			lector: 'Katka Špačková'
+			price: 100
+			dates:
+				-
+					date: '1.11.2016 18:00'
+					end: '19:30'
 		biorytmy:
 			course: 'Biorytmy v našem životě'
 			lector: 'MUDr. Miroslav Holub'
@@ -61,14 +69,6 @@ parameters:
 				-
 					date: '20.11.2015 18:30'
 					end: '21:00'
-		vnitrnicesta2:
-			course: 'Sdílení vnitřní cesty - setkání s Katkou'
-			lector: 'Katka Špačková'
-			price: 100
-			dates:
-				-
-					date: '5.2.2016 18:00'
-					end: '19:30'
 		relaxaceGongem:
 			course: 'Relaxace s gongem'
 			lector: 'Dana Šitnerová'
@@ -141,7 +141,7 @@ parameters:
 			price: 150
 			dates:
 				-
-					date: '21.10.2016 18:30'
+					date: '21.9.2016 18:30'
 					end: '20:00'
 		holub2:
 			course: 'Mozaika souvislostí, celostní pojetí medicíny - přednáška'
