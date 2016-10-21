@@ -33,6 +33,11 @@ parameters:
 			phone: '+420 604 534 508'
 			mail: 'zdravi.stesti@gmail.com'
 			web: 'www.zdravi-stesti.cz'
+		ullrichova:
+			name: 'Jana Ullrichová, DiS.'
+			phone: '+420 739 301 739'
+			mail: 'j.ullrichova@seznam.cz'
+			web: 'www.jemnydotek.cz'
 		pankova:
 			name: 'Ing. Lenka Pánková'
 			phone: '+420 725 173 409'
