@@ -356,3 +356,11 @@ parameters:
 				-
 					date: '2.12.2016 17:00'
 					end: '20:00'
+		elementy:
+			course: 'Teorie 5-ti elementů v praxi - přednáška'
+			lector: 'Libor Doležal'
+			price: 150
+			dates:
+				-
+					date: '9.12.2016 18:30'
+					end: '20:00'
