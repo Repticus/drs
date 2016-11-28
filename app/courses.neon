@@ -104,14 +104,6 @@ parameters:
 				-
 					date: '27.9.2016 18:00'
 					end: '19:30'
-		oslavavanoc:
-			course: 'Oslava příchodu Vánoc - setkání s Katkou'
-			lector: 'Katka Špačková'
-			price: 150
-			dates:
-				-
-					date: '18.12.2015 18:00'
-					end: '20:00'
 		detisoucasnosti:
 			course: 'Děti současnosti - přednáška'
 			lector: 'Věra Klucká'
@@ -378,4 +370,12 @@ parameters:
 			dates:
 				-
 					date: '9.12.2016 18:30'
+					end: '20:00'
+		oslavavanoc:
+			course: 'Oslava příchodu Vánoc - setkání a meditace přátel a příznivců Spolu na cestě'
+			lector: 'Katka Špačková a Lucie Pospíšilová'
+			price: 150
+			dates:
+				-
+					date: '20.12.2016 18:00'
 					end: '20:00'
