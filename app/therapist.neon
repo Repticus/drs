@@ -38,6 +38,11 @@ parameters:
 			phone: '+420 739 301 739'
 			mail: 'j.ullrichova@seznam.cz'
 			web: 'www.jemnydotek.cz'
+		Arden:
+			name: 'PhDr. Lukáš Arden'
+			phone: '+420 603 813 594'
+			mail: 'homeotouch@seznam.cz'
+			web: 'www.homeotouch.cz'
 		pankova:
 			name: 'Ing. Lenka Pánková'
 			phone: '+420 725 173 409'
