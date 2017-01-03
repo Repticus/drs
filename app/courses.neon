@@ -387,3 +387,19 @@ parameters:
 				-
 					date: '3.2.2017 17:30'
 					end: '19:30'
+		meditacnivecer:
+			course: 'Hudebně-meditační večer - večerní setkání s hudbou ne tak úplně běžnou'
+			lector: 'Jana a Dan Čadovi'
+			price: 250
+			dates:
+				-
+					date: '24.2.2017 18:00'
+					end: '20:00'
+		zakonkarmy:
+			course: 'Zákon karmy - seminář'
+			lector: 'Věra Klucká'
+			price: 450
+			dates:
+				-
+					date: '10.3.2017 17:00'
+					end: '20:00'
