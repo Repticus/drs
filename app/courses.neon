@@ -15,12 +15,6 @@ parameters:
 			price: 990
 			dates:
 				-
-					date: '21.10.2016 9:00'
-					end: '17:00'
-				-
-					date: '25.11.2016 9:00'
-					end: '17:00'
-				-
 					date: '17.2.2017 9:00'
 					end: '17:00'
 				-
@@ -34,9 +28,6 @@ parameters:
 			lector: 'Jaroslava Žaludová'
 			price: '800/1000'
 			dates:
-				-
-					date: '6.4.2016 9:00'
-					end: '17:00'
 				-
 					date: '4.5.2016 9:00'
 					end: '17:00'
@@ -94,12 +85,6 @@ parameters:
 			price: 400
 			gallery: 'gong'
 			dates:
-				-
-					date: '4.11.2016 18:30'
-					end: '20:00'
-				-
-					date: '6.1.2017 18:30'
-					end: '20:00'
 				-
 					date: '17.2.2017 18:30'
 					end: '20:00'
@@ -402,4 +387,12 @@ parameters:
 			dates:
 				-
 					date: '10.3.2017 17:00'
+					end: '20:00'
+		masky:
+			course: 'Masky - seminář'
+			lector: 'Věra Klucká'
+			price: 400
+			dates:
+				-
+					date: '28.4.2017 17:00'
 					end: '20:00'
