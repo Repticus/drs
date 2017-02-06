@@ -23,11 +23,6 @@ parameters:
 			name: 'Bc. Jitka Procházková'
 			phone: '+420 777 666 755'
 			mail: 'prochazkovajitka@post.cz'
-		adonai:
-			name: 'Filip Adonai'
-			phone: '+420 606 553 614'
-			mail: 'my3@bytvsrdci.org'
-			web: 'www.bytvsrdci.org'
 		kyralova:
 			name: 'Vendula Kyralová'
 			phone: '+420 604 534 508'
