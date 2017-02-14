@@ -15,13 +15,19 @@ parameters:
 			price: 990
 			dates:
 				-
-					date: '17.2.2017 9:00'
-					end: '17:00'
-				-
 					date: '7.4.2017 9:00'
 					end: '17:00'
 				-
 					date: '26.5.2017 9:00'
+					end: '17:00'
+				-
+					date: '15.9.2017 9:00'
+					end: '17:00'
+				-
+					date: '20.10.2017 9:00'
+					end: '17:00'
+				-
+					date: '24.11.2017 9:00'
 					end: '17:00'
 		numerologie:
 			course: 'Numerologický rozbor'
@@ -55,14 +61,6 @@ parameters:
 				-
 					date: '1.11.2016 18:00'
 					end: '19:30'
-		biorytmy:
-			course: 'Biorytmy v našem životě'
-			lector: 'MUDr. Miroslav Holub'
-			price: 200
-			dates:
-				-
-					date: '20.11.2015 18:30'
-					end: '21:00'
 		holub2:
 			course: 'Zajímavá mozaika souvislostí - přednáška'
 			lector: 'MUDr. Miroslav Holub'
@@ -71,8 +69,22 @@ parameters:
 				-
 					date: '3.3.2017 18:30'
 					end: '21:00'
+		realita:
+			course: 'Vše co již existuje v našem kvantovém poli - volný cyklus přednášek'
+			lector: 'Kateřina Krčmová'
+			price: '250'
+			dates:
+				-
+					date: '18.4.2017 19:00'
+					end: '21:00'
+				-
+					date: '16.5.2017 19:00'
+					end: '21:00'
+				-
+					date: '13.6.2017 19:00'
+					end: '21:00'
 		holub3:
-			course: 'Zajímavé souvislosti z celostního pohledu - přednáška'
+			course: 'Mozaika souvislostí - element dřevo - přednáška'
 			lector: 'MUDr. Miroslav Holub'
 			price: 200
 			dates:
@@ -86,17 +98,31 @@ parameters:
 			gallery: 'gong'
 			dates:
 				-
-					date: '17.2.2017 18:30'
-					end: '20:00'
-				-
-					date: '7.4.2017 18:30'
-					end: '20:00'
-				-
 					date: '26.5.2017 18:30'
 					end: '20:00'
 				-
 					date: '16.6.2017 18:30'
 					end: '20:00'
+				-
+					date: '15.9.2017 18:30'
+					end: '20:00'
+				-
+					date: '27.10.2017 18:30'
+					end: '20:00'
+				-
+					date: '24.11.2017 18:30'
+					end: '20:00'
+		tibetskemisy:
+			course: 'Koncert tibetských zpívajících mís v Praze'
+			lector: 'František Horváth'
+			price: 300
+			dates:
+				-
+					date: '20.10.2017 18:30'
+					end: '20:30'
+				-
+					date: '8.12.2017 18:30'
+					end: '20:30'
 		vnitrnicesta3:
 			course: 'Sdílení vnitřní cesty - setkání s Katkou'
 			lector: 'Katka Špačková'
@@ -349,12 +375,12 @@ parameters:
 					date: '21.6.2016 18:00'
 					end: '19:30'
 		zamer:
-			course: 'ZÁMĚR na rok 2017 – seminář s paní Věrou Kluckou'
+			course: 'ZÁMĚR na rok 2018 – seminář s paní Věrou Kluckou'
 			lector: 'Věra Klucká'
 			price: 450
 			dates:
 				-
-					date: '2.12.2016 17:00'
+					date: '1.12.2017 17:00'
 					end: '20:00'
 		oslavavanoc:
 			course: 'Oslava příchodu Vánoc - setkání a meditace přátel a příznivců Spolu na cestě'
@@ -370,7 +396,7 @@ parameters:
 			price: 300
 			dates:
 				-
-					date: '3.1.2017 17:30'
+					date: '8.9.2017 17:30'
 					end: '19:30'
 		meditacnivecer:
 			course: 'Hudebně-meditační večer - večerní setkání s hudbou ne tak úplně běžnou'
@@ -378,7 +404,7 @@ parameters:
 			price: 250
 			dates:
 				-
-					date: '24.2.2017 18:00'
+					date: '2.2.2017 18:00'
 					end: '20:00'
 		zakonkarmy:
 			course: 'Zákon karmy - seminář'
@@ -396,3 +422,19 @@ parameters:
 				-
 					date: '28.4.2017 17:00'
 					end: '20:00'
+		holub4:
+			course: 'Mozaika souvislostí - element oheň - přednáška'
+			lector: 'MUDr. Miroslav Holub'
+			price: 200
+			dates:
+				-
+					date: '6.10.2017 18:30'
+					end: '21:00'
+		biorytmy:
+			course: 'Biorytmy v našem životě'
+			lector: 'MUDr. Miroslav Holub'
+			price: 200
+			dates:
+				-
+					date: '3.11.2017 18:30'
+					end: '21:00'
