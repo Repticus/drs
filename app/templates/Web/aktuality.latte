@@ -12,14 +12,18 @@
 		<ul>
 			<li class="person" title="Lektor"><strong>{$courseData['lector']}</strong></li>
 			<li class="date" title="Termín konání" n:foreach="$courseData['dates'] as $date">{$date['date']|date:'%d.%m.%Y'} od {$date['date']|date:'%H:%M'} do {$date['end']} h</li>
+			<li n:ifset="$courseData['phone']" class="phone" title="Telefon">{$courseData['phone']}</li>
+			<li n:ifset="$courseData['mail']" class="mail" title="Email" ><a href="mailto:{$courseData['mail']}">{$courseData['mail']}</a></li>
 			<li class="price" title="Cena">{$courseData['price']} Kč</li>
 		</ul>
 		<div n:snippet="course$courseKey">
 			<div>
-				{if $presenter->course == $courseKey}
-					{include #registration}
-				{else}
-					<a class="ajax button" n:href="registration! $courseKey" rel="nofollow">Registrace</a>
+				{if !isset($courseData['register']) or $courseData['register']}
+					{if $presenter->course == $courseKey}
+						{include #registration}
+					{else}
+						<a class="ajax button" n:href="registration! $courseKey" rel="nofollow">Registrace</a>
+					{/if}
 				{/if}
 			</div>
 			{if isset($courseId) and $courseId == $courseKey}
@@ -1179,7 +1183,8 @@ Co je cílem:
 	Více na stránkách <a target="_blank" href="http://www.katerinakrcmova.cz">Kateřiny Krčmové</a>.
 </p>
 <p>
-	Počet míst je omezen, prosím o rezervaci.
+	Počet míst je omezen, rezervace předem je NUTNÁ.
+	Prosím, objednávejte se na email uvedený níže.
 </p>
 {/define}
 

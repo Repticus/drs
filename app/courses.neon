@@ -69,20 +69,6 @@ parameters:
 				-
 					date: '3.3.2017 18:30'
 					end: '21:00'
-		realita:
-			course: 'Vše co již existuje v našem kvantovém poli - volný cyklus přednášek'
-			lector: 'Kateřina Krčmová'
-			price: '250'
-			dates:
-				-
-					date: '18.4.2017 19:00'
-					end: '21:00'
-				-
-					date: '16.5.2017 19:00'
-					end: '21:00'
-				-
-					date: '13.6.2017 19:00'
-					end: '21:00'
 		holub3:
 			course: 'Mozaika souvislostí - element dřevo - přednáška'
 			lector: 'MUDr. Miroslav Holub'
@@ -112,6 +98,26 @@ parameters:
 				-
 					date: '24.11.2017 18:30'
 					end: '20:00'
+		realita:
+			course: 'Tvoříme si vlastní realitu - volný cyklus přednášek'
+			lector: 'Kateřina Krčmová'
+			price: '250'
+			mail: "osobne@katerinakrcmova.cz"
+			phone: "+420 722 113 791"
+			register: FALSE
+			dates:
+				-
+					date: '19.9.2017 19:00'
+					end: '21:00'
+				-
+					date: '17.10.2017 19:00'
+					end: '21:00'
+				-
+					date: '14.11.2017 19:00'
+					end: '21:00'
+				-
+					date: '12.12.2017 19:00'
+					end: '21:00'
 		tibetskemisy:
 			course: 'Koncert tibetských zpívajících mís v Praze'
 			lector: 'František Horváth'
