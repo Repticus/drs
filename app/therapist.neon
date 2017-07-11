@@ -28,6 +28,11 @@ parameters:
 			phone: '+420 604 534 508'
 			mail: 'zdravi.stesti@gmail.com'
 			web: 'www.zdravi-stesti.cz'
+		krcmova:
+			name: 'Kateřina Krčmová'
+			phone: '+420 722 113 791'
+			mail: 'osobne@katerinakrcmova.cz'
+			web: 'www.katerinakrcmova.cz/seminare'
 		ullrichova:
 			name: 'Jana Ullrichová, DiS.'
 			phone: '+420 739 301 739'
@@ -38,6 +43,11 @@ parameters:
 			phone: '+420 603 813 594'
 			mail: 'homeotouch@seznam.cz'
 			web: 'www.homeotouch.cz'
+		cechrakova:
+			name: 'Jana Čechráková'
+			phone: '+420 602 633 869'
+			mail: 'terapeuteft@email.cz'
+			web: 'www.terapeuteft.cz/terapie-eft'
 		pankova:
 			name: 'Ing. Lenka Pánková'
 			phone: '+420 725 173 409'
