@@ -118,6 +118,14 @@ parameters:
 				-
 					date: '12.12.2017 19:00'
 					end: '21:00'
+		dilna:
+			course: 'Dílna na téma masáž zvukem tibetských mís'
+			lector: 'František Horváth'
+			price: 550
+			dates:
+				-
+					date: '15.10.2017 14:00'
+					end: '17:00'
 		tibetskemisy:
 			course: 'Koncert tibetských zpívajících mís v Praze'
 			lector: 'František Horváth'
