@@ -43,11 +43,6 @@ parameters:
 			phone: '+420 603 813 594'
 			mail: 'homeotouch@seznam.cz'
 			web: 'www.homeotouch.cz'
-		cechrakova:
-			name: 'Jana Čechráková'
-			phone: '+420 602 633 869'
-			mail: 'terapeuteft@email.cz'
-			web: 'www.terapeuteft.cz/terapie-eft'
 		pankova:
 			name: 'Ing. Lenka Pánková'
 			phone: '+420 725 173 409'
