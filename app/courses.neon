@@ -450,5 +450,24 @@ parameters:
 			price: 200
 			dates:
 				-
-					date: '3.9.2017 18:30'
+					date: '26.1.2018 18:30'
 					end: '21:00'
+		smysloveOrgany:
+			course: 'Smyslové orgány podle elementů - přednáška'
+			lector: 'MUDr. Miroslav Holub'
+			price: 200
+			dates:
+				-
+					date: '23.3.2018 18:30'
+					end: '21:00'
+		vlnaDechu:
+			course: 'Na vlně dechu - praktický workshop'
+			lector: 'Veronika Kmochová'
+			price: 350
+			mail: 'veronika.kmochova@seznam.cz'
+			phone: '+420 604 550 863'
+			register: FALSE
+			dates:
+				-
+					date: '3.11.2017 18:00'
+					end: '20:00'
