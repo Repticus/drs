@@ -474,3 +474,17 @@ parameters:
 				-
 					date: '3.11.2017 18:00'
 					end: '20:00'
+		relaxacniDychani:
+			course: 'Relaxační dýchání – praktický seminář'
+			lector: 'Veronika Kmochová'
+			price: 2500
+			mail: 'veronika.kmochova@seznam.cz'
+			phone: '+420 604 550 863'
+			register: FALSE
+			dates:
+				-
+					date: '16.2.2018 18:00'
+					end: '21:00'
+				-
+					date: '22.6.2018 18:00'
+					end: '21:00'
