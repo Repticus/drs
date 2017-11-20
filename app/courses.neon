@@ -84,19 +84,19 @@ parameters:
 			gallery: 'gong'
 			dates:
 				-
-					date: '26.5.2017 18:30'
-					end: '20:00'
-				-
-					date: '16.6.2017 18:30'
-					end: '20:00'
-				-
-					date: '15.9.2017 18:30'
-					end: '20:00'
-				-
-					date: '27.10.2017 18:30'
-					end: '20:00'
-				-
 					date: '24.11.2017 18:30'
+					end: '20:00'
+				-
+					date: '19.1.2018 18:30'
+					end: '20:00'
+				-
+					date: '9.3.2018 18:30'
+					end: '20:00'
+				-
+					date: '18.5.2018 18:30'
+					end: '20:00'
+				-
+					date: '15.6.2018 18:30'
 					end: '20:00'
 		realita:
 			course: 'Tvoříme si vlastní realitu - volný cyklus přednášek'
@@ -472,7 +472,24 @@ parameters:
 			register: FALSE
 			dates:
 				-
-					date: '3.11.2017 18:00'
+					date: '5.1.2018 18:00'
+					end: '20:00'
+				-
+					date: '27.4.2018 18:00'
+					end: '20:00'
+		vlnaDechu2:
+			course: 'Na vlně dechu II. - praktický workshop'
+			lector: 'Veronika Kmochová'
+			price: 350
+			mail: 'veronika.kmochova@seznam.cz'
+			phone: '+420 604 550 863'
+			register: FALSE
+			dates:
+				-
+					date: '15.12.2017 18:00'
+					end: '20:00'
+				-
+					date: '8.6.2018 18:00'
 					end: '20:00'
 		relaxacniDychani:
 			course: 'Relaxační dýchání – praktický seminář'
