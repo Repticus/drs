@@ -98,6 +98,42 @@ parameters:
 				-
 					date: '15.6.2018 18:30'
 					end: '20:00'
+		zvukGongu:
+			course: 'Koupel ve zvuku gongu'
+			lector: 'Mgr. Kamila Černá'
+			price: 320
+			dates:
+				-
+					date: '23.1.2018 19:00'
+					end: '20:30'
+				-
+					date: '20.2.2018 18:00'
+					end: '19:30'
+				-
+					date: '20.3.2018 18:00'
+					end: '19:30'
+				-
+					date: '17.4.2018 18:00'
+					end: '19:30'
+				-
+					date: '29.5.2018 18:00'
+					end: '19:30'
+		meMistrovstvi:
+			course: 'Mé mistrovství – seminář'
+			lector: 'Věra Klucká'
+			price: 450
+			dates:
+				-
+					date: '2.2.2018 17:00'
+					end: '20:00'
+		roleZivota:
+			course: 'Role v životě – seminář'
+			lector: 'Věra Klucká'
+			price: 450
+			dates:
+				-
+					date: '16.3.2018 17:00'
+					end: '20:00'
 		realita:
 			course: 'Tvoříme si vlastní realitu - volný cyklus přednášek'
 			lector: 'Kateřina Krčmová'

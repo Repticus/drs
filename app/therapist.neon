@@ -23,11 +23,6 @@ parameters:
 			name: 'Bc. Jitka Procházková'
 			phone: '+420 777 666 755'
 			mail: 'prochazkovajitka@post.cz'
-		kyralova:
-			name: 'Vendula Kyralová'
-			phone: '+420 604 534 508'
-			mail: 'zdravi.stesti@gmail.com'
-			web: 'www.zdravi-stesti.cz'
 		krcmova:
 			name: 'Kateřina Krčmová'
 			phone: '+420 722 113 791'
@@ -43,11 +38,6 @@ parameters:
 			phone: '+420 603 813 594'
 			mail: 'homeotouch@seznam.cz'
 			web: 'www.homeotouch.cz'
-		pankova:
-			name: 'Ing. Lenka Pánková'
-			phone: '+420 725 173 409'
-			mail: 'lenka@pyrasova.cz'
-			web: 'lenka.pyrasova.cz'
 		zelenayova:
 			name: 'MUDr. Klára Zelenayová'
 			phone: '+420 705 219 914'
