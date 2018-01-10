@@ -28,6 +28,11 @@ parameters:
 			phone: '+420 722 113 791'
 			mail: 'osobne@katerinakrcmova.cz'
 			web: 'www.katerinakrcmova.cz/seminare'
+		cechrakova:
+			name: 'Jana Čechráková'
+			phone: '+420 602 633 869'
+			mail: 'terapeuteft@email.cz'
+			web: 'www.terapeuteft.cz/terapie-eft'
 		ullrichova:
 			name: 'Jana Ullrichová, DiS.'
 			phone: '+420 739 301 739'
