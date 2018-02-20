@@ -77,47 +77,6 @@ parameters:
 				-
 					date: '31.3.2017 18:30'
 					end: '21:00'
-		relaxaceGongem:
-			course: 'Relaxace s gongem'
-			lector: 'Dana Šitnerová'
-			price: 400
-			gallery: 'gong'
-			dates:
-				-
-					date: '24.11.2017 18:30'
-					end: '20:00'
-				-
-					date: '19.1.2018 18:30'
-					end: '20:00'
-				-
-					date: '9.3.2018 18:30'
-					end: '20:00'
-				-
-					date: '18.5.2018 18:30'
-					end: '20:00'
-				-
-					date: '15.6.2018 18:30'
-					end: '20:00'
-		zvukGongu:
-			course: 'Koupel ve zvuku gongu'
-			lector: 'Mgr. Kamila Černá'
-			price: 320
-			dates:
-				-
-					date: '23.1.2018 19:00'
-					end: '20:30'
-				-
-					date: '20.2.2018 18:00'
-					end: '19:30'
-				-
-					date: '20.3.2018 18:00'
-					end: '19:30'
-				-
-					date: '17.4.2018 18:00'
-					end: '19:30'
-				-
-					date: '29.5.2018 18:00'
-					end: '19:30'
 		meMistrovstvi:
 			course: 'Mé mistrovství – seminář'
 			lector: 'Věra Klucká'
@@ -125,14 +84,6 @@ parameters:
 			dates:
 				-
 					date: '2.2.2018 17:00'
-					end: '20:00'
-		roleZivota:
-			course: 'Role v životě – seminář'
-			lector: 'Věra Klucká'
-			price: 450
-			dates:
-				-
-					date: '16.3.2018 17:00'
 					end: '20:00'
 		realita:
 			course: 'Tvoříme si vlastní realitu - volný cyklus přednášek'
@@ -176,6 +127,74 @@ parameters:
 				-
 					date: '11.5.2018 18:30'
 					end: '20:30'
+		ChramovyGong:
+			course: 'Chrámový gong s Marti'
+			lector: 'Martina Fantová'
+			price: '0'
+			mail: "info@dumrukousvetla.cz"
+			phone: "+420 728 757 381"
+			dates:
+				-
+					date: '14.3.2018 11:00'
+					end: '12:00'
+				-
+					date: '18.4.2018 11:00'
+					end: '12:00'
+				-
+					date: '23.5.2018 11:00'
+					end: '12:00'
+				-
+					date: '20.6.2018 11:00'
+					end: '12:00'
+		roleZivota:
+			course: 'Role v životě – seminář'
+			lector: 'Věra Klucká'
+			price: 450
+			dates:
+				-
+					date: '16.3.2018 17:00'
+					end: '20:00'
+		relaxaceGongem:
+			course: 'Relaxace s gongem'
+			lector: 'Dana Šitnerová'
+			price: 400
+			gallery: 'gong'
+			dates:
+				-
+					date: '24.11.2017 18:30'
+					end: '20:00'
+				-
+					date: '19.1.2018 18:30'
+					end: '20:00'
+				-
+					date: '9.3.2018 18:30'
+					end: '20:00'
+				-
+					date: '18.5.2018 18:30'
+					end: '20:00'
+				-
+					date: '15.6.2018 18:30'
+					end: '20:00'
+		zvukGongu:
+			course: 'Koupel ve zvuku gongu'
+			lector: 'Mgr. Kamila Černá'
+			price: 320
+			dates:
+				-
+					date: '23.1.2018 19:00'
+					end: '20:30'
+				-
+					date: '20.2.2018 18:00'
+					end: '19:30'
+				-
+					date: '20.3.2018 18:00'
+					end: '19:30'
+				-
+					date: '17.4.2018 18:00'
+					end: '19:30'
+				-
+					date: '29.5.2018 18:00'
+					end: '19:30'
 		vnitrnicesta3:
 			course: 'Sdílení vnitřní cesty - setkání s Katkou'
 			lector: 'Katka Špačková'
