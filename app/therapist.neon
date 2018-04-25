@@ -33,6 +33,11 @@ parameters:
 			phone: '+420 602 633 869'
 			mail: 'terapeuteft@email.cz'
 			web: 'www.terapeuteft.cz/terapie-eft'
+		kyralova:
+			name: 'Vendula Kyralová'
+			phone: '+420 604 534 508'
+			mail: 'zdravi.stesti@gmail.com'
+			web: 'www.zdravi-stesti.cz'
 		ullrichova:
 			name: 'Jana Ullrichová, DiS.'
 			phone: '+420 739 301 739'
