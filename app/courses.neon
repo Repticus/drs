@@ -119,9 +119,6 @@ parameters:
 			price: 300
 			dates:
 				-
-					date: '11.5.2018 18:30'
-					end: '20:30'
-				-
 					date: '5.10.2018 18:30'
 					end: '20:30'
 				-
@@ -221,9 +218,6 @@ parameters:
 					end: '19:30'
 				-
 					date: '17.4.2018 18:00'
-					end: '19:30'
-				-
-					date: '22.5.2018 18:00'
 					end: '19:30'
 		vnitrnicesta3:
 			course: 'Sdílení vnitřní cesty - setkání s Katkou'
