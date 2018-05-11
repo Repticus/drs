@@ -190,18 +190,6 @@ parameters:
 				-
 					date: '24.11.2017 18:30'
 					end: '20:00'
-				-
-					date: '19.1.2018 18:30'
-					end: '20:00'
-				-
-					date: '9.3.2018 18:30'
-					end: '20:00'
-				-
-					date: '18.5.2018 18:30'
-					end: '20:00'
-				-
-					date: '15.6.2018 18:30'
-					end: '20:00'
 		zvukGongu:
 			course: 'Koupel ve zvuku gongu'
 			lector: 'Mgr. Kamila Černá'
