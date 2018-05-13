@@ -207,6 +207,20 @@ parameters:
 				-
 					date: '17.4.2018 18:00'
 					end: '19:30'
+		karma2:
+			course: 'Odložení karmy, přepis minulosti (akášických záznamů) - seminář'
+			lector: 'Kateřina Krčmová'
+			price: 1750
+			mail: "krcmova.katerina@gmail.com"
+			phone: "+420 722 113 791"
+			register: FALSE
+			dates:
+				-
+					date: '2.6.2018 16:00'
+					end: '20:00'
+				-
+					date: '24.6.2018 16:00'
+					end: '20:00'
 		vnitrnicesta3:
 			course: 'Sdílení vnitřní cesty - setkání s Katkou'
 			lector: 'Katka Špačková'
