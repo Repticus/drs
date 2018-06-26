@@ -90,12 +90,15 @@ h1,h2,*:before,#menu a,#therapist li, #therapist li a{
 	left: 290px;
 }
 #menu li{
-	margin-right: 10px;
+	position: absolute;
 }
 #menu li:nth-child(2n){
 	top: 60px;
-	left: 20px;
-	margin-right: 26px;
+	left: 10px;
+	margin-right: 10px;
+}
+#menu li:nth-child(3){
+	left: -60px;
 }
 #content{
 	margin: 440px 100px 0 100px;
