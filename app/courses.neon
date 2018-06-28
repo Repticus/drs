@@ -45,6 +45,14 @@ parameters:
 				-
 					date: '10.9.2015 18:30'
 					end: '20:30'
+		duveraVedeni:
+			course: 'Důvěra ve vedení x svoboda - prožitkový seminář'
+			lector: 'Věra Klucká'
+			price: 450
+			dates:
+				-
+					date: '21.9.2018 17:00'
+					end: '20:00'
 		zivotosprava:
 			course: 'Životospráva aneb cesta ke zdraví - přednáška'
 			lector: 'MUDr. Miroslav Holub'
