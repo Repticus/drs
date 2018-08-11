@@ -135,6 +135,22 @@ parameters:
 				-
 					date: '14.12.2018 18:30'
 					end: '20:30'
+		OtecMuzskaLinie:
+			course: 'Otec a mužská linie - seminář'
+			lector: 'Věrka Klucká'
+			price: 450
+			dates:
+				-
+					date: '26.10.2018 17:00'
+					end: '20:00'
+		zamer:
+			course: 'ZÁMĚR na rok 2018 – seminář s paní Věrou Kluckou'
+			lector: 'Věra Klucká'
+			price: 450
+			dates:
+				-
+					date: '7.12.2018 17:00'
+					end: '20:00'
 		ChramovyGong:
 			course: 'Chrámový gong s Marti'
 			lector: 'Martina Fantová'
@@ -480,14 +496,6 @@ parameters:
 				-
 					date: '21.6.2016 18:00'
 					end: '19:30'
-		zamer:
-			course: 'ZÁMĚR na rok 2018 – seminář s paní Věrou Kluckou'
-			lector: 'Věra Klucká'
-			price: 450
-			dates:
-				-
-					date: '1.12.2017 17:00'
-					end: '20:00'
 		oslavavanoc:
 			course: 'Oslava příchodu Vánoc - setkání a meditace přátel a příznivců Spolu na cestě'
 			lector: 'Katka Špačková a Lucie Pospíšilová'
