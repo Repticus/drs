@@ -29,6 +29,15 @@ parameters:
 				-
 					date: '11.1.2019 9:00'
 					end: '17:00'
+				-
+					date: '1.3.2019 9:00'
+					end: '17:00'
+				-
+					date: '12.4.2019 9:00'
+					end: '17:00'
+				-
+					date: '7.6.2019 9:00'
+					end: '17:00'
 		numerologie:
 			course: 'Numerologický rozbor'
 			lector: 'Jaroslava Žaludová'
@@ -159,21 +168,6 @@ parameters:
 			phone: "+420 728 757 381"
 			dates:
 				-
-					date: '14.9.2018 18:45'
-					end: '20:00'
-				-
-					date: '19.9.2018 11:00'
-					end: '12:15'
-				-
-					date: '3.10.2018 11:00'
-					end: '12:15'
-				-
-					date: '12.10.2018 18:45'
-					end: '20:00'
-				-
-					date: '17.10.2018 11:00'
-					end: '12:15'
-				-
 					date: '31.10.2018 11:00'
 					end: '12:15'
 				-
@@ -187,6 +181,45 @@ parameters:
 					end: '12:15'
 				-
 					date: '12.12.2018 11:00'
+					end: '12:15'
+				-
+					date: '8.1.2019 11:00'
+					end: '12:15'
+				-
+					date: '11.1.2019 19:00'
+					end: '20:15'
+				-
+					date: '29.1.2019 11:00'
+					end: '12:15'
+				-
+					date: '19.2.2019 11:00'
+					end: '12:15'
+				-
+					date: '1.3.2019 19:00'
+					end: '20:15'
+				-
+					date: '12.3.2019 11:00'
+					end: '12:15'
+				-
+					date: '2.4.2019 11:00'
+					end: '12:15'
+				-
+					date: '12.4.2019 19:00'
+					end: '20:15'
+				-
+					date: '23.4.2019 11:00'
+					end: '12:15'
+				-
+					date: '14.5.2019 11:00'
+					end: '12:15'
+				-
+					date: '4.6.2019 11:00'
+					end: '12:15'
+				-
+					date: '7.6.2019 19:00'
+					end: '20:15'
+				-
+					date: '25.6.2019 11:00'
 					end: '12:15'
 		roleZivota:
 			course: 'Role v životě – seminář'
@@ -552,7 +585,7 @@ parameters:
 					date: '23.3.2018 18:30'
 					end: '21:00'
 		vlnaDechu:
-			course: 'Na vlně dechu - praktický workshop'
+			course: 'Na vlně dechu I. - praktický workshop'
 			lector: 'Veronika Kmochová'
 			price: 350
 			mail: 'veronika.kmochova@seznam.cz'
@@ -560,10 +593,7 @@ parameters:
 			register: FALSE
 			dates:
 				-
-					date: '5.1.2018 18:00'
-					end: '20:00'
-				-
-					date: '27.4.2018 18:00'
+					date: '8.2.2019 18:00'
 					end: '20:00'
 		vlnaDechu2:
 			course: 'Na vlně dechu II. - praktický workshop'
@@ -580,7 +610,7 @@ parameters:
 					date: '8.6.2018 18:00'
 					end: '20:00'
 		relaxacniDychani:
-			course: 'Relaxační dýchání – praktický seminář'
+			course: 'Relaxační dýchání 2019 – seminář'
 			lector: 'Veronika Kmochová'
 			price: 2500
 			mail: 'veronika.kmochova@seznam.cz'
@@ -588,11 +618,11 @@ parameters:
 			register: FALSE
 			dates:
 				-
-					date: '16.2.2018 18:00'
+					date: '9.3.2019 18:00'
 					end: '21:00'
 				-
-					date: '22.6.2018 18:00'
-					end: '21:00'
+					date: '10.3.2019 10:00'
+					end: '14:00'
 		cchiKung:
 			course: 'Třídenní prožitkový kurz čchi-kung pro ženy'
 			lector: 'Hana Suberová'
