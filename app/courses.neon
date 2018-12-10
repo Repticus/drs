@@ -155,6 +155,9 @@ parameters:
 				-
 					date: '22.3.2019 18:30'
 					end: '20:30'
+				-
+					date: '17.5.2019 18:30'
+					end: '20:30'
 		OtecMuzskaLinie:
 			course: 'Otec a mužská linie - seminář'
 			lector: 'Věrka Klucká'
@@ -592,6 +595,14 @@ parameters:
 				-
 					date: '23.3.2018 18:30'
 					end: '21:00'
+		laskaZavislost:
+			course: 'Láska nebo Závislost - seminář'
+			lector: 'Věra Klucká'
+			price: 450
+			dates:
+				-
+					date: '1.2.2019 17:00'
+					end: '20:00'
 		vlnaDechu:
 			course: 'Na vlně dechu I. - praktický workshop'
 			lector: 'Veronika Kmochová'
@@ -602,6 +613,14 @@ parameters:
 			dates:
 				-
 					date: '8.2.2019 18:00'
+					end: '20:00'
+		malirskePlatno:
+			course: 'Malířské plátno - seminář'
+			lector: 'Věra Klucká'
+			price: 450
+			dates:
+				-
+					date: '8.3.2019 17:00'
 					end: '20:00'
 		vlnaDechu2:
 			course: 'Na vlně dechu II. - praktický workshop'
@@ -631,6 +650,22 @@ parameters:
 				-
 					date: '10.3.2019 10:00'
 					end: '14:00'
+		vnitrniSila:
+			course: 'Vnitřní síla – Já Jsem - seminář'
+			lector: 'Věra Klucká'
+			price: 450
+			dates:
+				-
+					date: '5.4.2019 17:00'
+					end: '20:00'
+		zacykleni:
+			course: 'Zacyklení v kruhu nebo vývoj po spirále - seminář'
+			lector: 'Věra Klucká'
+			price: 450
+			dates:
+				-
+					date: '31.5.2019 17:00'
+					end: '20:00'
 		cchiKung:
 			course: 'Třídenní prožitkový kurz čchi-kung pro ženy'
 			lector: 'Hana Suberová'
