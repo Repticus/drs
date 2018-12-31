@@ -23,11 +23,6 @@ parameters:
 			name: 'Bc. Jitka Procházková'
 			phone: '+420 777 666 755'
 			mail: 'prochazkovajitka@post.cz'
-		krcmova:
-			name: 'Kateřina Krčmová'
-			phone: '+420 722 113 791'
-			mail: 'osobne@katerinakrcmova.cz'
-			web: 'www.katerinakrcmova.cz'
 		cechrakova:
 			name: 'Jana Čechráková'
 			phone: '+420 602 633 869'
