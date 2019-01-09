@@ -28,11 +28,6 @@ parameters:
 			phone: '+420 602 633 869'
 			mail: 'terapeuteft@email.cz'
 			web: 'www.terapeuteft.cz/terapie-eft'
-		kyralova:
-			name: 'Vendula Kyralová'
-			phone: '+420 604 534 508'
-			mail: 'zdravi.stesti@gmail.com'
-			web: 'www.zdravi-stesti.cz'
 		Arden:
 			name: 'PhDr. Lukáš Arden'
 			phone: '+420 603 813 594'
