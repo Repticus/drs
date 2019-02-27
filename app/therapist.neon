@@ -23,16 +23,20 @@ parameters:
 			name: 'Bc. Jitka Procházková'
 			phone: '+420 777 666 755'
 			mail: 'prochazkovajitka@post.cz'
+		vavrova:
+			name: 'Mgr. Clara Vávrová'
+			phone: '+420 606 626 078'
+			mail: 'clarakonstelace@gmail.com'
 		cechrakova:
 			name: 'Jana Čechráková'
 			phone: '+420 602 633 869'
 			mail: 'terapeuteft@email.cz'
 			web: 'www.terapeuteft.cz/terapie-eft'
-		Arden:
-			name: 'PhDr. Lukáš Arden'
-			phone: '+420 603 813 594'
-			mail: 'homeotouch@seznam.cz'
-			web: 'www.homeotouch.cz'
+		kasparova:
+			name: 'Eva Kašparová'
+			phone: '+420 777 827 493'
+			mail: 'eva@hanam.eu'
+			web: 'www.hanam.eu'
 		zelenayova:
 			name: 'MUDr. Klára Zelenayová'
 			phone: '+420 705 219 914'
