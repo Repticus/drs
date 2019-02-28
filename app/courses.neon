@@ -44,7 +44,7 @@ parameters:
 			price: '200'
 			dates:
 				-
-					date: '11.4.2019 18:00'
+					date: '11.2.2019 18:00'
 					end: '20:00'
 		numerologie:
 			course: 'Numerologický rozbor'
