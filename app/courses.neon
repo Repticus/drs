@@ -38,6 +38,15 @@ parameters:
 				-
 					date: '7.6.2019 9:00'
 					end: '17:00'
+				-
+					date: '20.9.2019 9:00'
+					end: '17:00'
+				-
+					date: '18.10.2019 9:00'
+					end: '17:00'
+				-
+					date: '22.11.2019 9:00'
+					end: '17:00'
 		uciteleHvezd:
 			course: 'UČITELÉ Z HVĚZD – film Viliama Poltikoviče'
 			lector: 'Viliam Poltikovič'
@@ -663,7 +672,7 @@ parameters:
 			price: 450
 			dates:
 				-
-					date: '31.5.2019 17:00'
+					date: '31.5.2018 17:00'
 					end: '20:00'
 		cchiKung:
 			course: 'Třídenní prožitkový kurz čchi-kung pro ženy'
