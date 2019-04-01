@@ -164,16 +164,7 @@ parameters:
 			price: 300
 			dates:
 				-
-					date: '14.12.2018 18:30'
-					end: '20:30'
-				-
-					date: '25.1.2019 18:30'
-					end: '20:30'
-				-
-					date: '22.3.2019 18:30'
-					end: '20:30'
-				-
-					date: '17.5.2019 18:30'
+					date: '17.5.2018 18:30'
 					end: '20:30'
 		OtecMuzskaLinie:
 			course: 'Otec a mužská linie - seminář'
@@ -227,6 +218,9 @@ parameters:
 					end: '12:15'
 				-
 					date: '9.05.2019 11:00'
+					end: '12:15'
+				-
+					date: '17.5.2019 18:30'
 					end: '12:15'
 				-
 					date: '22.05.2019 11:00'
