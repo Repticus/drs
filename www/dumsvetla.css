@@ -268,7 +268,7 @@ select{
 .lfloat,.course ul,#menu li,#contact,#foto,#info,#therapist{
 	float: left;
 }
-p, ul, form, blockquote,.flash {
+p, ul, form, blockquote,.flash, .left {
 	margin: 4px 0 12px 0;
 }
 img,.button,.gallery a,select,textarea,input[type=text]{
@@ -309,6 +309,10 @@ img,.button,.gallery a,select,textarea,input[type=text]{
 	background-position: center 270px;
 	padding: 60px 0px;
 }
+.left{
+	float: left;
+	margin: 0 5px 0 0;
+}
 .flash {
 	padding: 8px;
 }
@@ -322,6 +326,6 @@ img,.button,.gallery a,select,textarea,input[type=text]{
 	color: #8a1f11;
 	border-color: #FBC2C4;
 }
-.clr,.flash{
+.clr, .flash{
 	clear: both;
 }
