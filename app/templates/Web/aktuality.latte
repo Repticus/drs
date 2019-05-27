@@ -14,7 +14,7 @@
 			<li class="date" title="Termín konání" n:foreach="$courseData['dates'] as $date">{$date['date']|date:'%d.%m.%Y'} od {$date['date']|date:'%H:%M'} do {$date['end']} h</li>
 			<li n:ifset="$courseData['phone']" class="phone" title="Telefon">{$courseData['phone']}</li>
 			<li n:ifset="$courseData['mail']" class="mail" title="Email" ><a href="mailto:{$courseData['mail']}">{$courseData['mail']}</a></li>
-			<li class="price" title="Cena">{$courseData['price']} Kč</li>
+			<li n:ifset="$courseData['price']" class="price" title="Cena">{$courseData['price']} Kč</li>
 		</ul>
 		<div n:snippet="course$courseKey">
 			<div>
@@ -1220,7 +1220,7 @@ Co je cílem:
 	Mimo rámec stanovených termínů je možné se <b>domluvit na individuálním hraní</b>.
 </p>
 <p>
-	Vstupné na dopolední termíny dobrovolné, <b>cena za večerní termíny je 250 kč</b>.
+	Vstupné na dopolední termíny dobrovolné, cena za večerní termíny je 250 Kč.
 </p>
 <p>
 	Počet míst je omezen, prosím o rezervaci.
@@ -1391,6 +1391,59 @@ Co je cílem:
 </p>
 <p>
 	Prosím o rezervaci, počet míst je omezen.
+</p>
+{/define}
+
+{define telos}
+<p>
+	Workshop vede Dr. Kim A. Jobst. Každý člověk, bez výjimky, má své unikátní životní poslání.
+	Když toto poslání ožívá, rezonuje to s našimi základními životními hodnotami a s tím, kdo opravdu jsme.
+	Když toto poslání následujeme, náš život se začne odvíjet způsobem, který nám přinese zdraví, vitalitu a smysl.
+	Neznamená to, že vše bude najednou snadné, ale přinese nám to hlubší porozumění a nový náhled na řešení životních situací.
+	Přinese nám to nacházení sebe sama, svých talentů, svého místa v životě a hluboké radosti z vyjadřování své jedinečnosti.
+</p>
+<p>
+	Vysoce interaktivní proces obsahuje vedenou meditaci, která Vám umožní stát tváří v tvář tomu, na čem ve Vašem životě opravdu záleží.
+	V druhé fázi Vám Kim Jobst pomůže tyto aspekty konkrétněji uchopit a zároveň můžete projít inspirativním sdílením procesu ostatních účastníků.
+	Telos, který je výstupem této práce poskytuje navigaci pro Váš každodenní život a poskytuje odpovědi na Vaše otázky.
+	Je to živoucí mandala, která Vás může podpořit ve všech oblastech Vašeho života.
+</p>
+<p>
+	Workshop bude probíhat v anglickém jazyce s českým překladem.
+	Káva, čaj, voda a malé občerstvení bude k dispozici.
+	Prosíme, abyste si přinesli s sebou oběd, nebude dostatečný časový prostor pro oběd mimo dům.
+</p>
+<p>
+	Dr. Kim Anthony Jobst MA. DM. FRCP. MFHom. je metafyzik, průkopník integrativní medicíny,
+	ve které působí jako konzultant již více než 20 let.
+	Na pozvání Jeho Svatosti Dalajlámy se účastnil diskuse na téma globální zdraví a mentální spokojensot.
+	Studoval a pracoval s Dr. Johnem F. Demartinim a je zprostředkovatelem jeho metody,
+	kterou začlenil do své vlastní práce a metodologie The Science of Meaning.
+	Věnuje pozornost spirituálním složkám života a tomu, jakou roli hrají v životě jednotlivců a udržení celé společnosti.
+	Má vlastní praxi Functional Shift Consulting Ltd. v Londýně, kde poskytuje zdravotní konzultace.
+</p>
+<p>
+	Maximální počet účastníků je 9 osob.
+</p>
+{/define}
+
+{define joga}
+<p>
+	Během dvoudenního semináře se naučíte sestavu hormonální jógy včetně protistresových cviků.
+	Sestava je vhodná pro Vaši domácí praxi.
+</p>
+<p>
+	Při pravidelném cvičení hormonální jóga pomáhá tělo připravit na těhotenství, je vhodná při problémech s menopauzou,
+	premenstruačním syndromem, při bolestivé, silné, či chybějící menstruaci.
+	Dále působí blahodárně při hypofunkci štítné žlázy, při cystách na vaječnících,
+	potřebujeme-li snížit či zvýšit svou hmotnost a celkově vyrovnává hormonální hladinu.
+</p>
+<p>
+	Lektorka Hana Suberová je certifikovaná přímo u Dinah Rodrigues, která jako jediná na světě školí své lektory.
+	Absolvování tohoto semináře neopravňuje tuto metodu vyučovat.
+</p>
+<p>
+	Více informací přímo u Hanky Suberové na níže uvedených kontaktech. Přihlášku můžete odeslat na webu <a target="_blank" href="http://www.jogahormonalni.cz">www.jogahormonalni.cz</a>
 </p>
 {/define}
 

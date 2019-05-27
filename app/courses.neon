@@ -238,6 +238,29 @@ parameters:
 				-
 					date: '13.12.2019 19:00'
 					end: '20:15'
+		telos:
+			course: 'TELOS - odhal své opravdové životní poslání'
+			lector: 'Dr. Kim Anthony Jobst MA. DM. FRCP. MFHom.'
+			price: 3000
+			mail: 'clarakonstelace@gmail.com'
+			register: FALSE
+			dates:
+				-
+					date: '1.6.2019 10:00'
+					end: '18:30'
+		joga:
+			course: 'Hormonální joga pro ženy - dvoudenní kurz'
+			lector: 'Hana Suberová'
+			mail: 'suberova@jogahormonalni.cz'
+			phone: "+420 608 824 787"
+			register: FALSE
+			dates:
+				-
+					date: '21.6.2019 18:00'
+					end: '21:00'
+				-
+					date: '2.8.2019 18:00'
+					end: '21:00'
 		roleZivota:
 			course: 'Role v životě – seminář'
 			lector: 'Věra Klucká'

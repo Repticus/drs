@@ -148,9 +148,6 @@ class WebPresenter extends Nette\Application\UI\Presenter {
 				->clearHeader('To')
 				->addTo($ownerMail, $ownerName)
 				->send();
-//		$mail->clearHeader('To')
-//				->addTo($backupMail, $backupName)
-//				->send();
 	}
 
 	private function setPersonalData($form) {
