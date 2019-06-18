@@ -8,6 +8,16 @@ parameters:
 				-
 					date: '16.1.2015 18:30'
 					end: '21:00'
+		telos:
+			course: 'TELOS - odhal své opravdové životní poslání'
+			lector: 'Dr. Kim Anthony Jobst MA. DM. FRCP. MFHom.'
+			price: 3000
+			mail: 'clarakonstelace@gmail.com'
+			register: FALSE
+			dates:
+				-
+					date: '29.6.2019 10:00'
+					end: '18:30'
 		aura:
 			course: 'Fotografování aury'
 			lector: 'Sylvie a Evžen Paulíčkovi'
@@ -174,14 +184,6 @@ parameters:
 				-
 					date: '26.10.2018 17:00'
 					end: '20:00'
-		zamer:
-			course: 'ZÁMĚR na rok 2019 – seminář s paní Věrou Kluckou'
-			lector: 'Věra Klucká'
-			price: 450
-			dates:
-				-
-					date: '7.12.2018 17:00'
-					end: '20:00'
 		ChramovyGong:
 			course: 'Chrámový gong s Marti'
 			lector: 'Martina Fantová'
@@ -238,16 +240,6 @@ parameters:
 				-
 					date: '13.12.2019 19:00'
 					end: '20:15'
-		telos:
-			course: 'TELOS - odhal své opravdové životní poslání'
-			lector: 'Dr. Kim Anthony Jobst MA. DM. FRCP. MFHom.'
-			price: 3000
-			mail: 'clarakonstelace@gmail.com'
-			register: FALSE
-			dates:
-				-
-					date: '1.6.2019 10:00'
-					end: '18:30'
 		joga:
 			course: 'Hormonální joga pro ženy - dvoudenní kurz'
 			lector: 'Hana Suberová'
@@ -721,3 +713,19 @@ parameters:
 				-
 					date: '6.12.2019 17:45'
 					end: '19:00'
+		svetloStin:
+			course: 'Světlo a stín - seminář'
+			lector: 'Věra Klucká'
+			price: 450
+			dates:
+				-
+					date: '27.9.2019 17:00'
+					end: '20:00'
+		zamer:
+			course: 'Záměr na rok 2020 - seminář'
+			lector: 'Věra Klucká'
+			price: 450
+			dates:
+				-
+					date: '29.11.2019 17:00'
+					end: '20:00'
