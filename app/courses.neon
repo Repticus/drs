@@ -721,6 +721,26 @@ parameters:
 				-
 					date: '27.9.2019 17:00'
 					end: '20:00'
+		oblicejovaJoga:
+			course: 'Obličejová jóga - seminář'
+			lector: 'Ing. Yvona Švecová'
+			price: 900
+			mail: 'kurzy@jogasyvonou.cz'
+			phone: '+420 604 815 667'
+			register: FALSE
+			dates:
+				-
+					date: '5.11.2019 17:00'
+					end: '20:00'
+		kvetoveEsence:
+			course: 'Australské květové esence - přednáška s možností esence vyzkoušet'
+			lector: 'Martina Smíšková'
+			price: 450
+			mail: 'kurzy@jogasyvonou.cz'
+			dates:
+				-
+					date: '15.11.2019 17:30'
+					end: '20:30'
 		zamer:
 			course: 'Záměr na rok 2020 - seminář'
 			lector: 'Věra Klucká'
