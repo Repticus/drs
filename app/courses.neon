@@ -57,20 +57,6 @@ parameters:
 				-
 					date: '22.11.2019 9:00'
 					end: '17:00'
-		energetickaDiagnostika:
-			course: 'Energetická diagnostika - měření aury - analýza osobnosti'
-			lector: 'Hana a Jiří Rakušanovi'
-			price: '900'
-			dates:
-				-
-					date: '24.1.2020 10:00'
-					end: '21:00'
-				-
-					date: '20.3.2020 10:00'
-					end: '21:00'
-				-
-					date: '29.5.2020 10:00'
-					end: '21:00'
 		uciteleHvezd:
 			course: 'UČITELÉ Z HVĚZD – film Viliama Poltikoviče'
 			lector: 'Viliam Poltikovič'
@@ -715,6 +701,20 @@ parameters:
 				-
 					date: '6.12.2019 17:45'
 					end: '19:00'
+		energetickaDiagnostika:
+			course: 'Energetická diagnostika - měření aury - analýza osobnosti'
+			lector: 'Hana a Jiří Rakušanovi'
+			price: '900'
+			dates:
+				-
+					date: '24.1.2020 9:00'
+					end: '16:30'
+				-
+					date: '20.3.2020 9:00'
+					end: '16:30'
+				-
+					date: '29.5.2020 9:00'
+					end: '16:30'
 		svetloStin:
 			course: 'Světlo a stín - seminář'
 			lector: 'Věra Klucká'
