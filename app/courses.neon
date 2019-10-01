@@ -681,6 +681,16 @@ parameters:
 				-
 					date: '31.5.2018 17:00'
 					end: '20:00'
+		telos2:
+			course: 'TELOS - odhal své opravdové životní poslání - workshop vede Dr. Kim A. Jobst'
+			lector: 'Dr. Kim Anthony Jobst MA. DM. FRCP. MFHom.'
+			price: 3000
+			mail: 'clarakonstelace@gmail.com'
+			register: FALSE
+			dates:
+				-
+					date: '26.10.2019 10:00'
+					end: '18:30'
 		cchiKung:
 			course: 'Čchi-kung pro ženy - pravidelné cvičení'
 			lector: 'Hana Suberová'
