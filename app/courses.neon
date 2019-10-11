@@ -187,46 +187,16 @@ parameters:
 		ChramovyGong:
 			course: 'Chrámový gong s Marti'
 			lector: 'Martina Fantová'
-			price: 0/250
+			price: 0
 			mail: "info@dumrukousvetla.cz"
 			phone: "+420 728 757 381"
 			gallery: 'gongmartina'
 			dates:
 				-
-					date: '11.9.2019 11:00'
-					end: '12:15'
-				-
-					date: '20.9.2019 19:00'
-					end: '20:15'
-				-
-					date: '25.9.2019 11:00'
-					end: '12:15'
-				-
-					date: '9.10.2019 11:00'
-					end: '12:15'
-				-
-					date: '18.10.2019 19:00'
-					end: '20:15'
-				-
-					date: '23.10.2019 11:00'
-					end: '12:15'
-				-
-					date: '13.11.2019 11:00'
-					end: '12:15'
-				-
-					date: '22.11.2019 19:00'
-					end: '20:15'
-				-
-					date: '27.11.2019 11:00'
-					end: '12:15'
-				-
-					date: '11.12.2019 11:00'
-					end: '12:15'
-				-
-					date: '13.12.2019 19:00'
-					end: '20:15'
-				-
 					date: '27.12.2019 11:00'
+					end: '12:15'
+				-
+					date: '24.6.2020 11:00'
 					end: '12:15'
 		joga:
 			course: 'Hormonální joga pro ženy - dvoudenní kurz'
