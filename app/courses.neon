@@ -193,11 +193,8 @@ parameters:
 			gallery: 'gongmartina'
 			dates:
 				-
-					date: '27.12.2019 11:00'
-					end: '12:15'
-				-
-					date: '24.6.2020 11:00'
-					end: '12:15'
+					date: '31.12.2020 01:00'
+					end: '23:00'
 		joga:
 			course: 'Hormonální joga pro ženy - dvoudenní kurz'
 			lector: 'Hana Suberová'
